@@ -10,7 +10,7 @@ export default function AboutUs() {
         About Us.
       </div>
     </div>
-    <div className="px-40 pb-10 file:text-sm mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+    <div className="lg:px-40 px-8 pb-10 file:text-sm mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         <p>
         Our Law Practice was founded upon the shared vision of our directors, Ms. Dorothy Chai and Ms. Mary Ong, to provide effective and practical legal solutions for our clients whilst training the next generation of Lawyers to do the same.
 
