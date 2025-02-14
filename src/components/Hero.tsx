@@ -5,7 +5,6 @@ import { cn } from "@/utils/cn"
 import Image from "next/image";
 // import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-// import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button"
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
@@ -57,11 +56,10 @@ export function FeaturesSectionDemo() {
         <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
         We offer
         a comprehensive range of legal services that focus primarily on family law, Mental Capacity Law, mediation, personal law and other forms of dispute resolution.
-        
         </p>
-        <p className="mx-auto text-center">
+        <div className="mx-auto text-center">
         <a href="#anchor_form" className={buttonVariants({ variant: "default" })}>Free Consultation</a>
-        </p>
+        </div>
 
       </div>
 
@@ -132,8 +130,7 @@ export const SkeletonOne = () => {
       <div className="w-full mx-auto bg-white dark:bg-neutral-900 group h-full">
 
         <div className="flex flex-1 w-full flex-col space-y-2  ">
-          {/* TODO */}
-          
+
           <Image
             src="/familylaw.jpg"
             alt="header"
@@ -155,7 +152,7 @@ export const SkeletonThree = () => {
 
       <div className="w-full mx-auto bg-transparent dark:bg-transparent group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2 relative">
-          {/* TODO */}
+
           <Image
             src="/image003.png"
             alt="header"

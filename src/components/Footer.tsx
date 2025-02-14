@@ -1,5 +1,6 @@
+'use client'
+import Image from "next/image"
 import Link from "next/link"
-
 export function Footer() {
     return (
 
@@ -7,7 +8,13 @@ export function Footer() {
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-                  <img src="/dcmo.png" className="h-8 me-3" alt="DCMO Logo" />
+                  <Image 
+                    src="/dcmo.png" 
+
+                    // className="h-8 me-3" 
+                    alt="DCMO Logo" 
+                    width={200} height={200} 
+                    className="m-auto object-cover object-center rounded-md"/>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>

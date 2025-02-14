@@ -1,3 +1,4 @@
+'use client'
 import { AnimatedTestimonialsView } from "@/components/AnimatedTestimonials";
 import React from "react";
 
