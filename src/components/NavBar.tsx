@@ -349,7 +349,7 @@ const navListItems = [
   },
   {
     label: "Blog",
-    href: "/about-us",
+    href: "/blog",
   },
   {
     label: "Contact",
@@ -418,8 +418,8 @@ export default function NavBar() {
       <Link href="/">
               <Image
                 alt="DCMO Law"
-                src="/dcmo.png"
-                className="h-11 w-auto"
+                src="/dcmologo.jpg"
+                className="h-6 w-auto px-1"
                 width="1350"
                 height="1350"
               />
