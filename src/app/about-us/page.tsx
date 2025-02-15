@@ -2,6 +2,8 @@
 import { AnimatedTestimonialsView } from "@/components/AnimatedTestimonials";
 import React from "react";
 
+
+
 export default function AboutUs() {
 
   return (

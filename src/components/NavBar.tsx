@@ -340,7 +340,7 @@ function ServicesListMenu() {
 // nav list component
 const navListItems = [
   {
-    label: "About Us",
+    label: "About",
     href: "/about-us",
   },
   {
@@ -353,7 +353,7 @@ const navListItems = [
   },
   {
     label: "Contact",
-    href: "/about-us",
+    href: "/contact-us",
   },
   {
     label: "Press",
