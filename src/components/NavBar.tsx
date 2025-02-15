@@ -345,7 +345,7 @@ const navListItems = [
   },
   {
     label: "Internships",
-    href: "/about-us",
+    href: "/internships",
   },
   {
     label: "Blog",
