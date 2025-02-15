@@ -30,7 +30,7 @@ export function Contact() {
   // };
 
   return (
-    <div id="anchor_form" className="mb-10 max-w-md w-full mx-auto border rounded-2x1 md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+    <div id="anchor_form" className="mb-10 max-w-md w-full mx-auto border rounded-2x1 md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black shadow-md">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
       Send us an enquiry
 
