@@ -131,24 +131,27 @@ const profilesMenuItems = [
     title: "Partners",
     description:
       "Our senior, most experienced lawyers.",
+    link: "/profiles/partners"
   },
   {
     title: "Consultants",
     description:
       "Consultants who contribute other key areas of expertise to our firm.",
+      link: "/profiles/consultants"
   },
   {
     title: "Associates",
     description:
       "Our legal associates.",
+      link: "/profiles/associates"
   },
 ];
  
 function ProfilesListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
  
-  const renderItems = profilesMenuItems.map(({ title, description }) => (
-    <a href="#" key={title}>
+  const renderItems = profilesMenuItems.map(({ title, description, link }) => (
+    <a href={link} key={title}>
       <MenuItem placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
         <Typography variant="h6" color="blue-gray" className="mb-1" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
@@ -186,7 +189,7 @@ function ProfilesListMenu() {
         </MenuHandler>
 
         <MenuList
-          className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid"
+          className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid no-outline"
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
@@ -195,7 +198,7 @@ function ProfilesListMenu() {
             color="white"
             shadow={false}
             variant="gradient"
-            className="col-span-3 grid h-full w-full place-items-center rounded-md"
+            className="no-outline col-span-3 grid h-full w-full place-items-center rounded-md"
             placeholder=""
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
@@ -203,11 +206,11 @@ function ProfilesListMenu() {
             <Image 
             src="/groupshot.jpg"
             alt="lawyers"
-            className="h-500 w-300"
+            className="h-500 w-300 rounded-2xl"
             width={1350}
             height={1350} />
           </Card>
-          <ul className="col-span-4 flex w-full flex-col gap-1">
+          <ul className="no-outline col-span-4 flex w-full flex-col gap-1">
             {renderItems}
           </ul>
         </MenuList>
@@ -237,24 +240,27 @@ const servicesMenuItems = [
     title: "Family Law",
     description:
       "Matrimonial Law is our firm’s specialty and key area of practice.",
+      link: "/familylaw"
   },
   {
     title: "Probate",
     description:
       "Probate is a legal process for distributing your estate according to the terms of your Will.",
+      link: "/familylaw"
   },
   {
     title: "Others",
     description:
       "Our team of lawyers are also experienced in other areas of personal law beyond matrimonial law.",
+      link: "/familylaw"
   },
 ];
  
 function ServicesListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
  
-  const renderItems = servicesMenuItems.map(({ title, description }) => (
-    <a href="#" key={title}>
+  const renderItems = servicesMenuItems.map(({ title, description, link }) => (
+    <a href={link} key={title}>
       <MenuItem placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
         <Typography variant="h6" color="blue-gray" className="mb-1" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
@@ -279,7 +285,6 @@ function ServicesListMenu() {
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
             >
-              {/* <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "} */}
               Services{" "}
               <ChevronDownIcon
                 strokeWidth={2}
@@ -298,10 +303,10 @@ function ServicesListMenu() {
           onPointerLeaveCapture={() => {}}
         >
           <Card
-            color="blue"
+            color="white"
             shadow={false}
             variant="gradient"
-            className="col-span-3 grid h-full w-full place-items-center rounded-md"
+            className="no-outline col-span-3 grid h-full w-full place-items-center rounded-md"
             placeholder=""
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
@@ -309,11 +314,11 @@ function ServicesListMenu() {
                         <Image 
             src="/lawservices.jpg"
             alt="lawyers"
-            className="h-500 w-300"
+            className="h-500 w-300 rounded-2xl"
             width={1350}
             height={1350} />
           </Card>
-          <ul className="col-span-4 flex w-full flex-col gap-1">
+          <ul className="no-outline col-span-4 flex w-full flex-col gap-1">
             {renderItems}
           </ul>
         </MenuList>
@@ -363,7 +368,7 @@ const navListItems = [
  
 function NavList() {
   return (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+    <ul className="no-outline mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
       <ServicesListMenu />
       <ProfilesListMenu />
       {navListItems.map(({ label, href }, 
@@ -439,17 +444,7 @@ export default function NavBar() {
         >
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
- 
-        {/* <Button
-          size="sm"
-          variant="text"
-          placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-        >
-          <span>Log In</span>
-        </Button> */}
-        {/* <ProfileMenu /> */}
+
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">
         <NavList />

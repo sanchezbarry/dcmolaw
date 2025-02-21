@@ -70,3 +70,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.no-outline:focus {
+  outline: none;
+}
