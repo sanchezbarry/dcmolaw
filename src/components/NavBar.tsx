@@ -246,13 +246,13 @@ const servicesMenuItems = [
     title: "Probate",
     description:
       "Probate is a legal process for distributing your estate according to the terms of your Will.",
-      link: "/familylaw"
+      link: "/probate"
   },
   {
     title: "Others",
     description:
       "Our team of lawyers are also experienced in other areas of personal law beyond matrimonial law.",
-      link: "/familylaw"
+      link: "/otherservices"
   },
 ];
  
