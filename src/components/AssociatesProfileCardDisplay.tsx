@@ -14,21 +14,21 @@ export const projects = [
     title: "Rashpal Singh Sidhu",
     description:
       "Rashpal Singh Sidhu is an Associate at DCMO Law Practice LLC.",
-    link: "/profiles/partners/rashpal-singh-sidhu",
+    link: "/profiles/associates/rashpal-singh-sidhu",
   },
   {
     image: "/heng-min-zhi.jpg",
     title: "Min Zhi",
     description:
       "Min Zhi joined the firm as a Legal Associate in 2021. Her practice focus is on Family Law and Estate Planning.",
-    link: "/profiles/partners/heng-min-zhi",
+    link: "/profiles/associates/heng-min-zhi",
   },
   {
     image: "/munloon.jpg",
     title: "Mun Loon",
     description:
       "Mun Loon is a Legal Associate at DCMO Law Practice LLC and a trained and qualified social worker, counsellor and mediator.",
-    link: "/profiles/partners/munloon",
+    link: "/profiles/associates/munloon",
   },
 
 

@@ -14,7 +14,7 @@ export const projects = [
     title: "Ellen Lee",
     description:
       "Ellen, a Justice of the Peace, has practised as an Advocate and Solicitor of the Supreme Court of Singapore after she was called to the Bar on 14 January 1981.",
-    link: "/profiles/partners/ellenlee",
+    link: "/profiles/consultants/ellenlee",
   },
 
 
