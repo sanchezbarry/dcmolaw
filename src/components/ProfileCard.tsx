@@ -5,6 +5,117 @@
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 
+export function MinZhiProfileCard() {
+  return (
+    <Card>
+      <CardImage>
+        /heng-min-zhi.jpg
+      </CardImage> 
+      <CardTitle>Heng Min Zhi</CardTitle>
+      <CardDescription>
+      Min Zhi joined the firm as a Legal Associate in 2021. Her practice focus is on Family Law and Estate Planning.
+
+<br></br>
+          <br></br>
+          Prior to joining the firm, she practised in the Litigation and Dispute Resolution Department of a full-service law firm specialising primarily in Civil and Commercial Litigation. Her previous practice also encompassed advising small and medium sized corporations on matters of regulatory compliance, contractual disputes and employment law.
+
+<br></br>
+          <br></br>
+          She graduated with a LL.B (Hons) from the National University of Singapore in 2015 and was admitted as an Advocate and Solicitor of the Supreme Court of Singapore in 2016. She holds additional degrees in English literature from the University of Virginia (B.A., 2003) and Harvard University (A.M., 2008). She is a member of the Law Society of Singapore and the Singapore Academy of Law.
+
+<br></br>
+          <br></br>
+          Min Zhi has always been active in pro-bono work from her student days and continues to give legal advice at public legal clinics through the Law Society’s Pro Bono Services Office.
+
+<br></br>
+          <br></br>
+          In her personal time, she enjoys growing heat-tolerant lettuces, listening to vintage radio dramas, and pondering theories of the literary avant-garde.
+
+<br></br>
+          <br></br>
+          <b>For further inquiries or requests for consultation, please call 65320123.</b>
+      </CardDescription>
+    </Card>
+  );
+}
+
+export function MunLoonProfileCard() {
+  return (
+    <Card>
+      <CardImage>
+        /munloon.jpg
+      </CardImage> 
+      <CardTitle>Mun Loon</CardTitle>
+      <CardDescription>
+      After 15 years in the social service sector, Mun Loon made a mid-career switch to the legal sector.  As a trained and qualified social worker, counsellor and mediator, Mun Loon’s was Head of Professional Services in a non-profit where he oversaw the agency’s professional practice direction and strategy. 
+          <br></br>
+          <br></br>
+          Tapping on his cross-training, Mun is equipped to work with high conflict, emotionally charged work.  He is perceptive and insightful faced with complex issues and works with clients from the repertoire of skills available.  Colleagues with complex, gridlocked cases often chat to glean from his synthesis of various training in the different fields of work. 
+          <br></br>
+          <br></br>
+          Other than being in legal practice, Mun Loon a talented orator who is both objective and clear.  Armed with a sharp wit and a clear mind, Mun is a sought-after speaker, trainer, and mentor especially in the areas of conflicts, relationships and marriage.  He consults with individuals and businesses on dispute management and crisis communications. 
+          <br></br>
+          <br></br>
+          Mun Loon graduated from Monash University with a Bachelor of Social Work. He earned accreditations in Mediation and Psychotherapy from the Regent’s College School of Psychotherapy and Counselling Psychology (UK), in Family Mediation at the Erickson’s Mediation Institute (USA) and Pepperdine University (USA). He is an accredited Gottman Educator for &apos;The Seven Principles in Making Marriage Work&apos; and &apos;Bringing Baby Home&apos; programmes, trained to Level II in the Gottman Method Couples&apos; Therapy by The Gottman Institute (USA).  In addition, Mun Loon holds a Doctor of Jurisprudence from the SUSS (Singapore).
+          <br></br>
+          <br></br>
+          <b>For further inquiries or requests for consultation, please call 65320123.</b>
+      </CardDescription>
+    </Card>
+  );
+}
+
+export function RashpalProfileCard() {
+  return (
+    <Card>
+      <CardImage>
+        /rashpal-singh-sidhu.jpg
+      </CardImage> 
+      <CardTitle>Rashpal Singh Sidhu</CardTitle>
+      <CardDescription>
+      Rashpal Singh Sidhu is an Associate at DCMO Law Practice LLC.
+
+<br></br>
+          <br></br>
+          Rashpal graduated from the National University of Singapore with a Bachelor of Laws in 2019 and was called to the Singapore Bar as an Advocate & Solicitor in 2020. He is a litigation lawyer and has assisted in a wide range of Family Law matters (both contentious and non-contentious matters).
+
+<br></br>
+          <br></br>
+          Rashpal’s experience includes:
+
+<br></br>
+          <br></br>
+          Assisted in acting for and advising various individuals on contentious and uncontentious matrimonial matters such as Divorce, Ancillary Matters, applications under the Guardianship of Infants Act for custody and care and control of children, Variation of existing Court Orders.
+          <br></br>
+          <br></br>
+          Successfully defended a Maintenance claim.
+          <br></br>
+          <br></br>
+          Assisted in a successful Personal Protection Order application.
+          <br></br>
+          <br></br>
+          Assisted in the enforcement of a judgment sum by way of Writ of Seizure and Sale of a house.
+          <br></br>
+          <br></br>
+          Assisted in the drafting of several Wills.
+          <br></br>
+          <br></br>
+          Assisted in a successful Deputyship application.
+          <br></br>
+          <br></br>
+          Assisted in the enforcement of Court Orders by way of Committal proceedings.
+          <br></br>
+          <br></br>
+          Rashpal is a member of the Law Society of Singapore and the Singapore Academy of Law. Rashpal has been involved in various Pro Bono projects since his University days, even helming the University Court Friends project for a year. In his personal time, he enjoys finding good food, discovering new music and spending time with his family.
+
+<br></br>
+          <br></br>
+          <b>For further inquiries or requests for consultation, please call 65320123.</b>
+      </CardDescription>
+    </Card>
+  );
+}
+
 export function DorothyProfileCard() {
   return (
     <Card>
@@ -70,28 +181,22 @@ export function MaryProfileCard() {
       <CardTitle>Mary Ong</CardTitle>
       <CardDescription>
       Mary Ong is one of the founding Partners of the Firm.
-
-
           <br></br>
           <br></br>
           She was called to the Bar of England and Wales (Lincoln’s Inn) in 1992 as a Barrister-at-Law. In April 1993, Mary was called to the Malaysian Bar and had worked in the state of Selangor and Johor where she last worked as a Lawyer with Allen & Gledhill , Johor Bahru , Malaysia.          <br></br>
           <br></br>
           In February 1998, Mary was called to the Singapore Bar and has since then been practicing law in Singapore.
-
-<br></br>
+          <br></br>
           <br></br>
           In the course of her practice, Mary had a broad-based practice in civil, commercial and banking litigation, arbitrations and other areas of the law (including contested probate litigation) before eventually specializing in family and matrimonial law.
-
-<br></br>
+          <br></br>
           <br></br>
           Mary fought her cases with passion and conviction and has successfully litigated in many contentious family disputes cases ranging from the division of matrimonial assets, maintenance, family violence to custody, care and control of children issues.
-
-<br></br>
+          <br></br>
           <br></br>
           Mary has litigated in all levels of court in Singapore, including the Court of Appeal. In particular, Mary was the Lead Counsel in the first ever reported judgment in Singapore on parental alienation delivered by the High Court of Singapore [ABW v ABV (2014) SGHC 29], where she successfully argued that the children who had been alienated from their mother should be returned to their mother’s custody. In his keynote address in 2015, the Chief Justice Sundaresh Menon highlighted the case as an example of the law setting “the standard of responsible conduct expected of family members in managing conflicts”.
           <br></br>
           <br></br>
-
           <b>Membership and Volunteer Work</b>
           <br></br>
           Mary is a member of the Law Society of Singapore and Singapore Academy of Law. She is also an Associate Mediator with Singapore Mediation Centre. For many years Mary has volunteered her legal services at the Meet-the-People sessions at the PAP Nee Soon South Branch and rendering free legal advice and services to Breakthrough Mission (a halfway house for drug rehabilitation).          <br></br>
@@ -124,9 +229,6 @@ export function EllenProfileCard() {
       <CardTitle>Ellen Lee</CardTitle>
       <CardDescription>
       Ellen, a Justice of the Peace, has practised as an Advocate and Solicitor of the Supreme Court of Singapore after she was called to the Bar on 14 January 1981. She worked as a Legal Assistant in M/s Lim Kiap Khee & Co from then till September 1984.
-
-
-
           <br></br>
           <br></br>
           In 1984, Ellen set up her sole-proprietorship law firm, Ellen Lee and Company, and after 21 years of successful practice, she merged it with M/s Ramdas & Wong in 2005 to become their Consultant in preparation for the 2006 General Elections.
@@ -252,7 +354,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "max-w-2xl w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
+        "max-w-3xl w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
         className
       )}
     >
@@ -290,7 +392,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-2xl",
+        "text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-3xl",
         className
       )}
     >
@@ -313,8 +415,8 @@ export const CardImage = ({
     return (
       <Image src={children} 
         width={600}
-        height={400}
-        alt="Description of image" className={cn("rounded-xl mx-auto", className)} />
+        height={300}
+        alt="Description of image" className={cn("rounded-xl mx-auto h-1/2", className)} />
       
       
     );

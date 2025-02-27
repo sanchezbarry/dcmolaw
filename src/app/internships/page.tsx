@@ -11,7 +11,7 @@ export default function Internship() {
         Internship
       </div>
     </div>
-    <div className="lg:px-64 px-8 pb-10 file:text-sm mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+    <div className="lg:px-64 lg:max-w-7xl px-8 pb-10 file:text-sm mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         <p>
         Please use this form if you would like to apply for an internship at DCMO Law Practice LLC. Applications submitted via other channels will not be considered.
 

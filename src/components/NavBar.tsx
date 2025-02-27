@@ -2,8 +2,9 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
+  // MobileNav,
   Typography,
+  Collapse,
   // Button,
   Menu,
   MenuHandler,
@@ -446,9 +447,10 @@ export default function NavBar() {
         </IconButton>
 
       </div>
-      <MobileNav open={isNavOpen} className="overflow-scroll">
+      {/* this was previously MobileNav/> */}
+      <Collapse open={isNavOpen} className="overflow-scroll">
         <NavList />
-      </MobileNav>
+      </Collapse>
     </Navbar>
   );
 }
