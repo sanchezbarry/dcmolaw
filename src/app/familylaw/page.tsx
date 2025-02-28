@@ -1,6 +1,7 @@
 
 import React from "react";
-
+import Link from "next/link";
+import { Button } from "@/components/ui/button"
 
 
 export default function FamilyLaw() {
@@ -51,6 +52,12 @@ Mental Capacity Law and Legacy Planning is a key area of practice in our firm.
 <br/>
 
         </p>
+
+        <div className="flex justify-center items-center px-4 py-6">
+      <Link href="/contact-us">
+<Button className="mx-auto">Contact Us</Button>
+</Link>
+    </div>
       </div>
 
     </>

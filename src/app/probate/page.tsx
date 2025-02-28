@@ -1,6 +1,7 @@
 
 import React from "react";
-
+import Link from "next/link";
+import { Button } from "@/components/ui/button"
 
 
 export default function Probate() {
@@ -34,6 +35,12 @@ With our expertise, we streamline the probate process, minimizing delays and avo
 📞 Contact us today for a consultation and let us handle the legal complexities, so you can focus on what truly matters.
 
         </p>
+
+        <div className="flex justify-center items-center px-4 py-6">
+      <Link href="/contact-us">
+<Button className="mx-auto">Contact Us</Button>
+</Link>
+    </div>
       </div>
 
     </>

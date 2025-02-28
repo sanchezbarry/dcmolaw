@@ -20,13 +20,13 @@ All fields are compulsory to be filled. All applications should also be typewrit
 For further inquiries or requests for consultation, please call 65320123.
 
         </p>
-
-      </div>
-      <div className="flex justify-center items-center px-4 py-6">
+        <div className="flex justify-center items-center px-4 py-6">
       <Link href="/internship-application-form.pdf">
 <Button className="mx-auto">Download Form</Button>
 </Link>
     </div>
+      </div>
+
 
     </>
   );

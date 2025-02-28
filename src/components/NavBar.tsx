@@ -363,7 +363,7 @@ const navListItems = [
   },
   {
     label: "Press",
-    href: "/about-us",
+    href: "/press",
   },
 ];
  

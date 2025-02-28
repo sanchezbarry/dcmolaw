@@ -5,6 +5,9 @@
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 
+import Link from "next/link";
+import { Button } from "@/components/ui/button"
+
 export function MinZhiProfileCard() {
   return (
     <Card>
@@ -35,6 +38,7 @@ export function MinZhiProfileCard() {
           <br></br>
           <b>For further inquiries or requests for consultation, please call 65320123.</b>
       </CardDescription>
+      <CardCTA/>
     </Card>
   );
 }
@@ -61,6 +65,7 @@ export function MunLoonProfileCard() {
           <br></br>
           <b>For further inquiries or requests for consultation, please call 65320123.</b>
       </CardDescription>
+      <CardCTA/>
     </Card>
   );
 }
@@ -112,6 +117,7 @@ export function RashpalProfileCard() {
           <br></br>
           <b>For further inquiries or requests for consultation, please call 65320123.</b>
       </CardDescription>
+      <CardCTA/>
     </Card>
   );
 }
@@ -168,6 +174,7 @@ export function DorothyProfileCard() {
           <b>For further inquiries or requests for consultation, please call 65320123.</b>
 
       </CardDescription>
+      <CardCTA/>
     </Card>
   );
 }
@@ -214,6 +221,7 @@ export function MaryProfileCard() {
           <br></br>
           <b>For further inquiries or requests for consultation, please call 65320123.</b>
 </CardDescription>
+<CardCTA/>
     </Card>
   );
 }
@@ -251,7 +259,7 @@ She was elected twice as a Member of Parliament for Sembawang GRC (Woodlands) in
           <br></br>
           Ellen, a native Teochew, was the first female Parliamentarian to be appointed an ex-officio in the Ngee Ann Kongsi Board of Directors from 2006 to 2015.
 
-<br></br>
+          <br></br>
           <br></br>
           Ellen was also appointed Board Member of the Land Transport Authority from 2011 to 2017 and was also Chairman of LTA’s Finance and Establishment Committee and a Member of LTA’s Risk Management Committee.
           <br></br>
@@ -273,73 +281,74 @@ She was elected twice as a Member of Parliament for Sembawang GRC (Woodlands) in
           <br></br>
           <br></br>
           Licensed Solemniser and Deputy Registrar of the Registry of Marriages, Singapore
-Member of the Ministry Of Health Clinical Ethics Committee (CEC)
-Member of MAS’ Disciplinary Action Appeals Panel
-Member of the ITE Panel of Persons for the Committee of Inquiry (COI)
-<br></br>
-<br></br>
-<b>Community Affiliations
-</b>
-<br></br>
-President of the Singapore Table Tennis Association
-<br></br><br></br>
-President of the Silver Ribbon (Singapore)
-<br></br><br></br>
-Board Member and Legal Advisor of Nam Hwa Opera Limited
-<br></br><br></br>
-Board Member and Legal Advisor of Bukit Timah Seu Teck Seon Tong Institution
-<br></br><br></br>
-Vice-President and Honorary Legal Advisor of the Singapore Min Chong Sports Club
-<br></br><br></br>
-Honorary Legal Advisor of various NGOs, VWOs, Chinese Clans, Associations, Religious, Cultural and Literary Groups, among others.
-<br></br>
-<br></br>
-Teaching Service Provider to the Singapore University of Social Services
-<br></br><br></br>
+          Member of the Ministry Of Health Clinical Ethics Committee (CEC)
+          Member of MAS’ Disciplinary Action Appeals Panel
+          Member of the ITE Panel of Persons for the Committee of Inquiry (COI)
+          <br></br>
+          <br></br>
+          <b>Community Affiliations
+          </b>
+          <br></br>
+          President of the Singapore Table Tennis Association
+          <br></br><br></br>
+          President of the Silver Ribbon (Singapore)
+          <br></br><br></br>
+          Board Member and Legal Advisor of Nam Hwa Opera Limited
+          <br></br><br></br>
+          Board Member and Legal Advisor of Bukit Timah Seu Teck Seon Tong Institution
+          <br></br><br></br>
+          Vice-President and Honorary Legal Advisor of the Singapore Min Chong Sports Club
+          <br></br><br></br>
+          Honorary Legal Advisor of various NGOs, VWOs, Chinese Clans, Associations, Religious, Cultural and Literary Groups, among others.
+          <br></br>
+          <br></br>
+          Teaching Service Provider to the Singapore University of Social Services
+          <br></br><br></br>
 
-<b>Professional Record
-</b>
-<br></br>
-DCMO Law LLC, Consultant (1 December 2020 to todate)
-<br></br>
-Belinda Ang Tang & Partners, Consultant (1 April 2014 to 30 November 2020)
-<br></br>
-Ramdas & Wong, Consultant (1 October 2005 to 30 March 2014)
-<br></br>
-Ellen Lee & Company (1 October 1984 to 30 September 2005)
-<br></br>
-Lim Kiap Khee & Company (14 January 1981 to 30 September 1984)
-<br></br><br></br>
-Supreme Court of Singapore, Advocate & Solicitor (1981-2020)
-<br></br><br></br>
-<b>Practice Areas
-</b>
-<br></br>
-Family Law
-Probate, Wills, LPAs
-Immigration
-Corporate Work
-<br></br><br></br>
+            <b>Professional Record
+            </b>
+            <br></br>
+            DCMO Law LLC, Consultant (1 December 2020 to todate)
+            <br></br>
+            Belinda Ang Tang & Partners, Consultant (1 April 2014 to 30 November 2020)
+            <br></br>
+            Ramdas & Wong, Consultant (1 October 2005 to 30 March 2014)
+            <br></br>
+            Ellen Lee & Company (1 October 1984 to 30 September 2005)
+            <br></br>
+            Lim Kiap Khee & Company (14 January 1981 to 30 September 1984)
+            <br></br><br></br>
+            Supreme Court of Singapore, Advocate & Solicitor (1981-2020)
+            <br></br><br></br>
+            <b>Practice Areas
+            </b>
+            <br></br>
+            Family Law
+            Probate, Wills, LPAs
+            Immigration
+            Corporate Work
+            <br></br><br></br>
 
-<b>Summary of Past Service Records
-</b>
-<br></br>
-Inaugural Chairman of the Law Society of Singapore Family Law Practice Committee for 10 years and as a Consultant from 2015 till 2020
-<br></br><br></br>
-President for 2 terms and as Vice-President for about 8 terms respectively of the Singapore Association of Women Lawyers (SAWL)
-<br></br><br></br>
-Served in the People’s Association in various Committees as Chairman, Secretary and member respectively from 1982 to 2006
-<br></br><br></br>
-President of the Singapore Women’s Football Association
-<br></br><br></br>
-Columnist of SAWL’s Legal Letterbox published in the Chinese dailies, Lianhe Zaobao, Lianhe Wanbao and Shin Min Daily.
-<br></br><br></br>
-Regular interviews in Straits Times, The New Paper,Lianhe Zaobao, Lianhe Wanbao and Shin Min Daily and MediaCorp’s Capital FM 95.8, 972 and 93.8 and NTUC’s 100.3 and FM 96.8
-<br></br><br></br>
-Gave pro bono talks on different law topics to the public at community clubs, VWOs and NGOs and providing weekly free legal counselling services under SAWL
-<br></br><br></br>
+            <b>Summary of Past Service Records
+            </b>
+            <br></br>
+            Inaugural Chairman of the Law Society of Singapore Family Law Practice Committee for 10 years and as a Consultant from 2015 till 2020
+            <br></br><br></br>
+            President for 2 terms and as Vice-President for about 8 terms respectively of the Singapore Association of Women Lawyers (SAWL)
+            <br></br><br></br>
+            Served in the People’s Association in various Committees as Chairman, Secretary and member respectively from 1982 to 2006
+            <br></br><br></br>
+            President of the Singapore Women’s Football Association
+            <br></br><br></br>
+            Columnist of SAWL’s Legal Letterbox published in the Chinese dailies, Lianhe Zaobao, Lianhe Wanbao and Shin Min Daily.
+            <br></br><br></br>
+            Regular interviews in Straits Times, The New Paper,Lianhe Zaobao, Lianhe Wanbao and Shin Min Daily and MediaCorp’s Capital FM 95.8, 972 and 93.8 and NTUC’s 100.3 and FM 96.8
+            <br></br><br></br>
+            Gave pro bono talks on different law topics to the public at community clubs, VWOs and NGOs and providing weekly free legal counselling services under SAWL
+            <br></br><br></br>
           <b>For further inquiries or requests for consultation, please call 65320123.</b>
-</CardDescription>
+      </CardDescription>
+      <CardCTA/>
     </Card>
   );
 }
@@ -401,7 +410,18 @@ export const CardDescription = ({
   );
 };
 
-
+export const CardCTA = ({
+ 
+}) => {
+  return (
+    <div className="flex justify-center items-center px-4 py-6">
+    <Link href="/contact-us">
+<Button className="mx-auto">Contact Us</Button>
+</Link>
+  </div>
+  )   
+  ;
+};
 
 
 
