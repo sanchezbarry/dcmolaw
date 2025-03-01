@@ -1,8 +1,15 @@
-'use client'
+
 import { AnimatedTestimonialsView } from "@/components/AnimatedTestimonials";
 import React from "react";
+import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: 'DCMO Law Practice LLC | About Us',
+  description: 'Matrimonial Law is our firm’s specialty and key area of practice. Our highly experienced team of lawyers not only offer sound and practical legal solutions to your legal issues, but are also able to handle them with the nuance and finesse required in dealing with delicate familial relationships.',
+}
 
 export default function AboutUs() {
 
@@ -27,6 +34,11 @@ Notably, our Ms Mary Ong was the Lead Counsel in the first ever reported judgmen
 Our Ms Dorothy Chai has won several awards and accolades for her work as a Family Practitioner and has been appointed Counsel by her fellow Practitioners in complex matrimonial and domestic relations disputes. She has successfully handled many contested and complicated divorces, some involving high profile individuals of high net worth. Recently, she has also single handedly successfully argued a landmark case involving complex and important point of laws pertaining to, amongst other things, the recognition of a foreign decree of Divorce in Singapore.   
 
         </p>
+        <div className="flex justify-center items-center px-4 py-6">
+      <Link href="/contact-us">
+<Button className="mx-auto">Contact Us</Button>
+</Link>
+    </div>
       </div>
     <div className="flex justify-center items-center px-4">
       <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">

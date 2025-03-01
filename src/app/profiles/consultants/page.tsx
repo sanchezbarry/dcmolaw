@@ -1,8 +1,7 @@
-'use client'
 
+'use client'
 import React from "react";
 import { ConsultantProfileCardDisplay } from "@/components/ConsultantProfileCardDisplay";
-
 
 
 export default function Consultants() {

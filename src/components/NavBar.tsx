@@ -263,7 +263,7 @@ function ServicesListMenu() {
   const renderItems = servicesMenuItems.map(({ title, description, link }) => (
     <a href={link} key={title}>
       <MenuItem placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-        <Typography variant="h6" color="blue-gray" className="mb-1" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="h6" color="blue-gray" className="mb-1 no-outline" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
         </Typography>
         <Typography variant="small" color="gray" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>

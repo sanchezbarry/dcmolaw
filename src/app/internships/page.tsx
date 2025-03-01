@@ -2,8 +2,9 @@
 import React from "react";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
-export default function Internship() {
 
+
+export default function Internship() {
   return (
     <>
     <div className="pt-20 pb-10 flex justify-center items-center px-4">
