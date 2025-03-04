@@ -1,13 +1,8 @@
 
+'use client'
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'DCMO Law Practice LLC | About Us',
-  description: 'Matrimonial Law is our firm’s specialty and key area of practice. Our highly experienced team of lawyers not only offer sound and practical legal solutions to your legal issues, but are also able to handle them with the nuance and finesse required in dealing with delicate familial relationships.',
-}
 
 export default function Probate() {
 
@@ -22,7 +17,6 @@ export default function Probate() {
     <div className="lg:px-64 lg:max-w-7xl px-8 pb-10 file:text-sm mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         <p>
         
-
 Losing a loved one is never easy, and navigating the legal complexities of probate can add unnecessary stress during an already difficult time. At DCMO, we specialize in probate and estate administration, ensuring that your loved one’s assets are distributed efficiently, fairly, and in accordance with the law.
 
 Our experienced probate lawyers guide executors, administrators, and beneficiaries through every step of the process, including:

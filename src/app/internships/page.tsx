@@ -3,7 +3,6 @@ import React from "react";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 
-
 export default function Internship() {
   return (
     <>
@@ -16,8 +15,10 @@ export default function Internship() {
         <p>
         Please use this form if you would like to apply for an internship at DCMO Law Practice LLC. Applications submitted via other channels will not be considered.
 
-All fields are compulsory to be filled. All applications should also be typewritten and accompanied by a cover email and your CV and a copy of your latest academic transcript setting out your law grades. Please send your applications to: <Link href="mailto:enquiry@dcmolaw.com.sg">enquiry@dcmolaw.com.sg</Link>
-
+All fields are compulsory to be filled. All applications should also be typewritten and accompanied by a cover email and your CV and a copy of your latest academic transcript setting out your law grades.
+<br/><br/>
+ Please send your applications to: <Link href="mailto:enquiry@dcmolaw.com.sg">enquiry@dcmolaw.com.sg</Link>
+<br/><br/>
 For further inquiries or requests for consultation, please call 65320123.
 
         </p>

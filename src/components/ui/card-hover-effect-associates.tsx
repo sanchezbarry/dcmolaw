@@ -22,7 +22,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-3  lg:grid-cols-3  py-10 px-2 md:px-4 lg:px-16",
+        "grid grid-cols-1 md:grid-cols-3  lg:grid-cols-3 py-10 px-2 md:px-4 lg:px-16",
         className
       )}
     >
@@ -72,7 +72,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-white border border-gray-300 dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "shadow-md rounded-2xl h-full w-full p-4 overflow-hidden bg-white border border-gray-300 dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >

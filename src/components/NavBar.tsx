@@ -169,10 +169,10 @@ function ProfilesListMenu() {
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
 
 
-        <MenuHandler>
+        <MenuHandler className="no-outline">
           <Typography as="a" href="#" variant="small" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <MenuItem
-              className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
+              className="hidden no-outline items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
               placeholder=""
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
@@ -278,10 +278,10 @@ function ServicesListMenu() {
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
 
 
-        <MenuHandler>
+        <MenuHandler className="no-outline">
           <Typography as="a" href="#" variant="small" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <MenuItem
-              className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
+              className="hidden no-outline items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
               placeholder=""
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
