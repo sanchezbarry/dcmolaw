@@ -7,7 +7,7 @@ export default function OtherServices() {
 
   return (
     <>
-    <div className="pt-20 pb-10 flex justify-center items-center px-4">
+    <div className="pt-12 pb-10 flex justify-center items-center px-4">
       <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
       Other Areas of Practice
       </div>

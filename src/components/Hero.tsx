@@ -46,7 +46,7 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="relative z-20 py-8 lg:pt-20 lg:pb-20 max-w-7xl mx-auto">
+    <div className="relative z-20 py-8 lg:pt-12 lg:pb-20 max-w-7xl mx-auto">
       <div className="px-8">
         <Image src="/dcmo.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
@@ -150,7 +150,7 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
   return (
 
-      <div className="w-full mx-auto bg-transparent dark:bg-transparent group h-full">
+      <div className="w-full mx-auto bg-transparent dark:bg-transparent group">
         <div className="flex flex-1 w-full h-full flex-col space-y-2 relative">
 
           <Image
@@ -158,7 +158,7 @@ export const SkeletonThree = () => {
             alt="header"
             width={4000}
             height={4000}
-            className=" h-1/2 w-full object-cover object-center rounded-sm pt-5 blur-none group-hover/image:blur-md transition-all duration-200"
+            className=" h-1/2 w-full object-cover object-center rounded-md pt-5 blur-none group-hover/image:blur-md transition-all duration-200"
           />
         </div>
       </div>
@@ -243,7 +243,7 @@ export const SkeletonTwo = () => {
 
 export const SkeletonFour = () => {
   return (
-    <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
+    <div className="flex flex-col items-center relative bg-transparent dark:bg-transparent mt-6">
                 <Image
             src="/bible.jpg"
             alt="header"
