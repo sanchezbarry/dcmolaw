@@ -62,6 +62,9 @@ DCMO Law Practice LLC
 133 New Bridge Road #14-10 Chinatown Point
 <br/>
 Singapore 059413
+<br/>
+Tel : 65320123
+Fax : 6535 2265
           </div>
       </div>
     </div>

@@ -434,9 +434,9 @@ export const CardImage = ({
   }) => {
     return (
       <Image src={children} 
-        width={600}
-        height={300}
-        alt="Description of image" className={cn("rounded-xl mx-auto h-1/2", className)} />
+        width={400}
+        height={600}
+        alt="Description of image" className={cn("rounded-xl mx-auto", className)} />
       
       
     );

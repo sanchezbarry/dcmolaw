@@ -9,20 +9,20 @@ export function AssociatesProfileCardDisplay() {
   );
 }
 export const projects = [
-  {
-    image: "/rashpal-singh-sidhu.jpg",
-    title: "Rashpal Singh Sidhu",
-    description:
-      "Rashpal Singh Sidhu is an Associate at DCMO Law Practice LLC.",
-    link: "/profiles/associates/rashpal",
-  },
-  {
-    image: "/heng-min-zhi.jpg",
-    title: "Min Zhi",
-    description:
-      "Min Zhi joined the firm as a Legal Associate in 2021. Her practice focus is on Family Law and Estate Planning.",
-    link: "/profiles/associates/minzhi",
-  },
+  // {
+  //   image: "/rashpal-singh-sidhu.jpg",
+  //   title: "Rashpal Singh Sidhu",
+  //   description:
+  //     "Rashpal Singh Sidhu is an Associate at DCMO Law Practice LLC.",
+  //   link: "/profiles/associates/rashpal",
+  // },
+  // {
+  //   image: "/heng-min-zhi.jpg",
+  //   title: "Min Zhi",
+  //   description:
+  //     "Min Zhi joined the firm as a Legal Associate in 2021. Her practice focus is on Family Law and Estate Planning.",
+  //   link: "/profiles/associates/minzhi",
+  // },
   {
     image: "/munloon.jpg",
     title: "Mun Loon",

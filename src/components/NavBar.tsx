@@ -353,10 +353,10 @@ const navListItems = [
     label: "Internships",
     href: "/internships",
   },
-  {
-    label: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   label: "Blog",
+  //   href: "/blog",
+  // },
   {
     label: "Contact",
     href: "/contact-us",
