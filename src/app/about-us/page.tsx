@@ -1,5 +1,5 @@
 'use client'
-import { AnimatedTestimonialsView } from "@/components/AnimatedTestimonials";
+// import { AnimatedTestimonialsView } from "@/components/AnimatedTestimonials";
 import React from "react";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
@@ -39,7 +39,7 @@ Our Ms Dorothy Chai has won several awards and accolades for her work as a Famil
         Hear What People Say About Us
       </div>
     </div>
-    <AnimatedTestimonialsView />
+    {/* <AnimatedTestimonialsView /> */}
     </>
   );
 }
