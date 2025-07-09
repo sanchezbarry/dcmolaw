@@ -363,7 +363,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "max-w-3xl w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-md group",
+        "max-w-3xl w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)]  bg-gray-100 shadow-md group",
         className
       )}
     >

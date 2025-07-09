@@ -22,108 +22,7 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
  
-// profile menu component
-// const profileMenuItems = [
-//   {
-//     label: "My Profile",
-//     icon: UserCircleIcon,
-//   },
-//   {
-//     label: "Edit Profile",
-//     icon: Cog6ToothIcon,
-//   },
-//   {
-//     label: "Inbox",
-//     icon: InboxArrowDownIcon,
-//   },
-//   {
-//     label: "Help",
-//     icon: LifebuoyIcon,
-//   },
-//   {
-//     label: "Sign Out",
-//     icon: PowerIcon,
-//   },
-// ];
- 
-// profile menu
-// function ProfileMenu() {
-//   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
- 
-//   const closeMenu = () => setIsMenuOpen(false);
- 
-//   return (
-//     <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
-//       <MenuHandler>
-//         <Button
-//           variant="text"
-//           color="blue-gray"
-//           className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
-//           placeholder=""
-//           onPointerEnterCapture={() => {}}
-//           onPointerLeaveCapture={() => {}}
-//         >
-//           <Avatar
-//             variant="circular"
-//             size="sm"
-//             alt="tania andrew"
-//             className="border border-gray-900 p-0.5"
-//             src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-//             placeholder=""
-//             onPointerEnterCapture={() => {}}
-//             onPointerLeaveCapture={() => {}}
-//           />
-//           <ChevronDownIcon
-//             strokeWidth={2.5}
-//             className={`h-3 w-3 transition-transform ${
-//               isMenuOpen ? "rotate-180" : ""
-//             }`}
-//           />
-//         </Button>
-//       </MenuHandler>
-//       <MenuList
-//         className="p-1"
-//         placeholder=""
-//         onPointerEnterCapture={() => {}}
-//         onPointerLeaveCapture={() => {}}
-//       >
-//         {profileMenuItems.map(({ label, icon }, key) => {
-//           const isLastItem = key === profileMenuItems.length - 1;
-//           return (
-//             <MenuItem
-//               key={label}
-//               onClick={closeMenu}
-//               className={`flex items-center gap-2 rounded ${
-//                 isLastItem
-//                   ? "hover:bg-red-500/10 focus:bg-red-500/10 active:bg-red-500/10"
-//                   : ""
-//               }`}
-//               placeholder=""
-//               onPointerEnterCapture={() => {}}
-//               onPointerLeaveCapture={() => {}}
-//             >
-//               {React.createElement(icon, {
-//                 className: `h-4 w-4 ${isLastItem ? "text-red-500" : ""}`,
-//                 strokeWidth: 2,
-//               })}
-//               <Typography
-//                 as="span"
-//                 variant="small"
-//                 className="font-normal"
-//                 color={isLastItem ? "red" : "inherit"}
-//                 placeholder=""
-//                 onPointerEnterCapture={() => {}}
-//                 onPointerLeaveCapture={() => {}}
-//               >
-//                 {label}
-//               </Typography>
-//             </MenuItem>
-//           );
-//         })}
-//       </MenuList>
-//     </Menu>
-//   );
-// }
+
 
 
 // nav list menu
@@ -154,10 +53,10 @@ function ProfilesListMenu() {
   const renderItems = profilesMenuItems.map(({ title, description, link }) => (
     <a href={link} key={title}>
       <MenuItem placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-        <Typography variant="h6" color="blue-gray" className="mb-1" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="h6" color="white" className="mb-1" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
         </Typography>
-        <Typography variant="small" color="gray" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="small" color="white" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {description}
         </Typography>
       </MenuItem>
@@ -172,7 +71,7 @@ function ProfilesListMenu() {
         <MenuHandler className="no-outline">
           <Typography as="a" href="#" variant="small" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <MenuItem
-              className="hidden no-outline items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
+              className="hidden no-outline items-center gap-2 font-medium dark:text-neutral-100 text-blue-gray-900 lg:flex lg:rounded-full"
               placeholder=""
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
@@ -190,13 +89,13 @@ function ProfilesListMenu() {
         </MenuHandler>
 
         <MenuList
-          className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid no-outline"
+          className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid no-outline dark:bg-neutral-900 "
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
         >
           <Card
-            color="white"
+            color="transparent"
             shadow={false}
             variant="gradient"
             className="no-outline col-span-3 grid h-full w-full place-items-center rounded-md"
@@ -263,10 +162,10 @@ function ServicesListMenu() {
   const renderItems = servicesMenuItems.map(({ title, description, link }) => (
     <a href={link} key={title}>
       <MenuItem placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-        <Typography variant="h6" color="blue-gray" className="mb-1 no-outline" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="h6" color="white" className="mb-1 no-outline" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
         </Typography>
-        <Typography variant="small" color="gray" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="small" color="white" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {description}
         </Typography>
       </MenuItem>
@@ -281,7 +180,7 @@ function ServicesListMenu() {
         <MenuHandler className="no-outline">
           <Typography as="a" href="#" variant="small" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <MenuItem
-              className="hidden no-outline items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
+              className="hidden no-outline items-center gap-2 font-medium dark:text-neutral-100 hover:text-blue-gray-900 text-blue-gray-900 lg:flex lg:rounded-full"
               placeholder=""
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
@@ -298,7 +197,7 @@ function ServicesListMenu() {
         </MenuHandler>
 
         <MenuList
-          className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid"
+          className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid dark:bg-neutral-900 "
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
@@ -307,7 +206,7 @@ function ServicesListMenu() {
             color="white"
             shadow={false}
             variant="gradient"
-            className="no-outline col-span-3 grid h-full w-full place-items-center rounded-md"
+            className="dark:bg-neutral-900 no-outline col-span-3 grid h-full w-full place-items-center rounded-md"
             placeholder=""
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
@@ -319,7 +218,7 @@ function ServicesListMenu() {
             width={1350}
             height={1350} />
           </Card>
-          <ul className="no-outline col-span-4 flex w-full flex-col gap-1">
+          <ul className="no-outline col-span-4 flex w-full flex-col gap-1 dark:text-neutral-100">
             {renderItems}
           </ul>
         </MenuList>
@@ -328,7 +227,7 @@ function ServicesListMenu() {
 {/*Mobile menu*/}
 
       <MenuItem
-        className="flex items-center gap-2 font-medium text-blue-gray-900 lg:hidden"
+        className="flex items-center gap-2 font-medium dark:text-neutral-100  text-blue-gray-900 lg:hidden"
         placeholder=""
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
@@ -369,7 +268,7 @@ const navListItems = [
  
 function NavList() {
   return (
-    <ul className="no-outline mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+    <ul className="no-outline mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center dark:text-neutral-100 ">
       <ServicesListMenu />
       <ProfilesListMenu />
       {navListItems.map(({ label, href }, 
@@ -381,19 +280,19 @@ function NavList() {
           href={href}
           variant="small"
           color="gray"
-          className="font-medium text-blue-gray-500"
+          className="font-medium dark:text-neutral-100  text-blue-gray-500"
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
         >
           <MenuItem
-            className="flex items-center gap-2 lg:rounded-full"
+            className="dark:text-neutral-100 flex items-center gap-2 lg:rounded-full"
             placeholder=""
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
           >
         
-            <span className="text-gray-900"> {label}</span>
+            <span className="dark:text-neutral-100  text-gray-900"> {label}</span>
           </MenuItem>
         </Typography>
       ))}
@@ -415,16 +314,16 @@ export default function NavBar() {
  
   return (
     <Navbar
-      className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6"
+      className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6 bg-white dark:bg-neutral-900 transition-colors"
       placeholder=""
       onPointerEnterCapture={() => {}}
       onPointerLeaveCapture={() => {}}
     >
-      <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
+      <div className="relative mx-auto flex items-center justify-between dark:text-neutral-100  text-blue-gray-900 ">
       <Link href="/">
               <Image
                 alt="DCMO Law"
-                src="/dcmologo.jpg"
+                src="/whitedcmo.png"
                 className="h-6 w-auto px-1"
                 width="1350"
                 height="1350"

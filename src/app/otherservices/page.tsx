@@ -15,12 +15,13 @@ export default function OtherServices() {
     <div className="lg:px-64 lg:max-w-7xl px-8 pb-10 file:text-sm mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         <p>
       
-        Our team of lawyers are also experienced in other areas of personal law beyond matrimonial law. We also offer highly competitive rates for the handling of your matter entrusted to us as we seek to be a one-stop centre for all your personal legal needs. The range of other personal law matters handled by our firm include the following:
+        Our team of lawyers is also experienced in a broad range of personal law matters. We offer highly competitive rates and are committed to serving as a one-stop centre for all your personal legal needs. The areas of personal law we handle include, but are not limited to, the following:
 <br/><br/>
 
 Adoption of Children
 <br/>
-
+Wills & Lasting Power of Attorney 
+<br/>
 Deed Poll (Change of Name)
 <br/>
 Power of Attorney

@@ -36,7 +36,7 @@ export default function FloatingBackToTop() {
             initial="hide"
             animate={controls}
             onClick={scrollToTop}>
-            <ArrowUpCircleIcon className="size-12 text-gray-900" />
+            <ArrowUpCircleIcon className="size-12" style={{ color: "#d1be82" }} />
         </motion.button>
     );
 }

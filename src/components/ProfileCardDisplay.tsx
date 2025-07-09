@@ -3,7 +3,7 @@ import { HoverEffect } from "./ui/card-hover-effect";
 
 export function ProfileCardDisplay() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-5xl mx-auto px-8 dark:bg-neutral-900">
       <HoverEffect items={projects} />
     </div>
   );

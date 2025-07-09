@@ -47,8 +47,8 @@ export function FeaturesSectionDemo() {
   ];
   return (
     <div className="relative z-20 py-8 lg:pt-12 lg:pb-20 max-w-7xl mx-auto">
-      <div className="px-8">
-        <Image src="/dcmo.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
+      {/* <div className="px-8">
+        <Image src="/dcmowhite.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
         Every client matters.
         </h4>
@@ -61,7 +61,39 @@ export function FeaturesSectionDemo() {
         <a href="#anchor_form" className={buttonVariants({ variant: "default" })}>Consultation</a>
         </div>
 
-      </div>
+      </div> */}
+
+<div
+  className="relative w-full left-1/2 right-1/2 -mx-[50vw] px-8 pt-0"
+  style={{
+    position: "relative",
+    width: "100vw",
+    left: "50%",
+    right: "50%",
+    marginLeft: "-50vw",
+    marginRight: "-50vw",
+    backgroundImage: "url('/hero-bg.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    paddingTop: 0, // ensures it starts at the very top
+  }}
+>
+  <div className="absolute inset-0 bg-black/40 dark:bg-black/60 pointer-events-none" />
+  <div className="relative z-10 pt-16 pb-16"> {/* pt-16 for spacing below nav, pb-16 for more space below button */}
+    <Image src="/dcmowhite.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
+    <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
+      Every client matters.
+    </h4>
+    <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+      We offer
+      a comprehensive range of legal services that focus primarily on family law, Mental Capacity Law, mediation, personal law and other forms of dispute resolution.
+    </p>
+    <div className="mx-auto text-center">
+      <a href="#anchor_form" className={buttonVariants({ variant: "default" })}>Consultation</a>
+    </div>
+  </div>
+</div>
 
       <div className="relative ">
         <div className="grid grid-cols-1 lg:grid-cols-6 lg:grid-rows-2 mt-12 xl:border rounded-2x1 md:rounded-2xl dark:border-neutral-800 shadow-md">
@@ -168,9 +200,9 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images = [
-    "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=2704&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1559035843-e20a3b69c7a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1577897113292-3b95936e5206?q=80&w=2590&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1505547828843-176834e42154?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1527599296290-e847cebb1d00?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
