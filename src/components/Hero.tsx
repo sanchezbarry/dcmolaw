@@ -5,7 +5,6 @@ import { cn } from "@/utils/cn"
 import Image from "next/image";
 // import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { buttonVariants } from "@/components/ui/button"
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 
