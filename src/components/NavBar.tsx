@@ -52,7 +52,7 @@ function ProfilesListMenu() {
  
   const renderItems = profilesMenuItems.map(({ title, description, link }) => (
     <a href={link} key={title}>
-      <MenuItem placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+      <MenuItem className="hover:bg-[#baa974]" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
         <Typography variant="h6" color="white" className="mb-1" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
         </Typography>
@@ -71,7 +71,7 @@ function ProfilesListMenu() {
         <MenuHandler className="no-outline">
           <Typography as="a" href="#" variant="small" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <MenuItem
-              className="hidden no-outline items-center gap-2 font-medium dark:text-neutral-100 text-blue-gray-900 lg:flex lg:rounded-full"
+              className="hidden no-outline items-center gap-2 font-medium dark:text-neutral-100 text-blue-gray-900 lg:flex lg:rounded-full hover:bg-[#baa974]"
               placeholder=""
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
@@ -89,7 +89,7 @@ function ProfilesListMenu() {
         </MenuHandler>
 
         <MenuList
-          className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid no-outline dark:bg-neutral-900 "
+          className="border-none hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid no-outline dark:bg-neutral-700 "
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
@@ -119,7 +119,7 @@ function ProfilesListMenu() {
 {/*Mobile menu*/}
 
       <MenuItem
-        className="flex items-center gap-2 font-medium text-blue-gray-900 lg:hidden"
+        className="flex items-center gap-2 font-medium text-blue-gray-900 dark:text-neutral-100  lg:hidden"
         placeholder=""
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
@@ -161,7 +161,7 @@ function ServicesListMenu() {
  
   const renderItems = servicesMenuItems.map(({ title, description, link }) => (
     <a href={link} key={title}>
-      <MenuItem placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+      <MenuItem className="hover:bg-[#baa974]" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
         <Typography variant="h6" color="white" className="mb-1 no-outline" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
         </Typography>
@@ -180,7 +180,7 @@ function ServicesListMenu() {
         <MenuHandler className="no-outline">
           <Typography as="a" href="#" variant="small" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <MenuItem
-              className="hidden no-outline items-center gap-2 font-medium dark:text-neutral-100 hover:text-blue-gray-900 text-blue-gray-900 lg:flex lg:rounded-full"
+              className="hidden no-outline items-center gap-2 font-medium dark:text-neutral-100 hover:text-blue-gray-900 text-blue-gray-900 lg:flex lg:rounded-full hover:bg-[#baa974]"
               placeholder=""
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
@@ -197,13 +197,13 @@ function ServicesListMenu() {
         </MenuHandler>
 
         <MenuList
-          className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid dark:bg-neutral-900 "
+          className="border-none hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid dark:bg-neutral-700 "
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
         >
           <Card
-            color="white"
+            color="transparent"
             shadow={false}
             variant="gradient"
             className="dark:bg-neutral-900 no-outline col-span-3 grid h-full w-full place-items-center rounded-md"
@@ -218,7 +218,7 @@ function ServicesListMenu() {
             width={1350}
             height={1350} />
           </Card>
-          <ul className="no-outline col-span-4 flex w-full flex-col gap-1 dark:text-neutral-100">
+          <ul className="no-outline col-span-4 flex w-full flex-col gap-1 dark:text-neutral-100 ">
             {renderItems}
           </ul>
         </MenuList>
@@ -227,7 +227,7 @@ function ServicesListMenu() {
 {/*Mobile menu*/}
 
       <MenuItem
-        className="flex items-center gap-2 font-medium dark:text-neutral-100  text-blue-gray-900 lg:hidden"
+        className="flex items-center gap-2 font-medium dark:text-neutral-100 text-blue-gray-900 lg:hidden"
         placeholder=""
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
@@ -286,7 +286,7 @@ function NavList() {
           onPointerLeaveCapture={() => {}}
         >
           <MenuItem
-            className="dark:text-neutral-100 flex items-center gap-2 lg:rounded-full"
+            className="dark:text-neutral-100 flex items-center gap-2 lg:rounded-full hover:bg-[#baa974]"
             placeholder=""
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
@@ -314,7 +314,7 @@ export default function NavBar() {
  
   return (
     <Navbar
-      className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6 bg-white dark:bg-neutral-900 transition-colors"
+      className="border-none mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6 bg-white dark:bg-neutral-800 transition-colors"
       placeholder=""
       onPointerEnterCapture={() => {}}
       onPointerLeaveCapture={() => {}}

@@ -18,7 +18,7 @@ export function FeaturesSectionDemo() {
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
-      button: <Link href="/otherservices"><Button>Read More</Button></Link>
+      button: <Link href="/familylaw"><Button>Read More</Button></Link>
     },
     {
       title: "Other Areas",
@@ -26,7 +26,7 @@ export function FeaturesSectionDemo() {
         "Our team of lawyers are also experienced in other areas of personal law beyond matrimonial law. We also offer highly competitive rates for the handling of your matter entrusted to us as we seek to be a one-stop centre for all your personal legal needs.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
-      button: <Link href="/about-us"><Button>Other Services</Button></Link>
+      button: <Link href="/otherservices"><Button>Other Services</Button></Link>
     },
     {
       title: "Who we are?",
@@ -72,7 +72,7 @@ export function FeaturesSectionDemo() {
     right: "50%",
     marginLeft: "-50vw",
     marginRight: "-50vw",
-    backgroundImage: "url('/hero-bg.jpg')",
+    backgroundImage: "url('/hero-bg2.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
