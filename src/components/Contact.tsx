@@ -1,31 +1,31 @@
 "use client";
-import { Label } from "../components/ui/label";
-import { Input } from "../components/ui/input";
+// import { Label } from "../components/ui/label";
+// import { Input } from "../components/ui/input";
 import { cn } from "@/utils/cn";
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
 import Map from "@/components/Map";
 
 
 export function Contact() {
   
-  const form = useRef<HTMLFormElement>(null);
+  // const form = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
 
-    if (form.current) {
-      emailjs.sendForm('service_mj7djes', 'template_cr8vpyo', form.current, 'Uhr95mJdb1211miPp')
-        .then((result) => {
-          console.log(result.text);
-          alert('Message sent successfully!');
-        }, (error) => {
-          console.log(error.text);
-          alert('Failed to send the message, please try again.');
-        });
-    }
-  };
+  //   if (form.current) {
+  //     emailjs.sendForm('service_mj7djes', 'template_cr8vpyo', form.current, 'Uhr95mJdb1211miPp')
+  //       .then((result) => {
+  //         console.log(result.text);
+  //         alert('Message sent successfully!');
+  //       }, (error) => {
+  //         console.log(error.text);
+  //         alert('Failed to send the message, please try again.');
+  //       });
+  //   }
+  // };
 
 
   // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -216,16 +216,16 @@ Fax : 6535 2265
 //   );
 // };
 
-const LabelInputContainer = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <div className={cn("flex flex-col space-y-2 w-full", className)}>
-      {children}
-    </div>
-  );
-};
+// const LabelInputContainer = ({
+//   children,
+//   className,
+// }: {
+//   children: React.ReactNode;
+//   className?: string;
+// }) => {
+//   return (
+//     <div className={cn("flex flex-col space-y-2 w-full", className)}>
+//       {children}
+//     </div>
+//   );
+// };
