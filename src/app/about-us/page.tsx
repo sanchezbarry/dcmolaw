@@ -3,7 +3,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+// import { motion } from "motion/react";
 
 export function HeroSectionOne() {
   return (
