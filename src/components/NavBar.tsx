@@ -334,7 +334,7 @@ export default function NavBar() {
         </div>
         <IconButton
           size="sm"
-          color="blue-gray"
+          color="white"
           variant="text"
           onClick={toggleIsNavOpen}
           className="ml-auto mr-2 lg:hidden"
