@@ -90,7 +90,8 @@ export function FeaturesSectionDemo() {
       a comprehensive range of legal services that focus primarily on family law, Mental Capacity Law, mediation, personal law and other forms of dispute resolution.
     </p>
     <div className="mx-auto text-center">
-      <a href="#anchor_form" className={buttonVariants({ variant: "default" })}>Consultation</a>
+      <Link href="#anchor_form"><Button>Contact Us</Button></Link>
+      {/* <a href="#anchor_form" className={buttonVariants({ variant: "default" })}>Contact Us</a> */}
     </div>
   </div>
 </div>

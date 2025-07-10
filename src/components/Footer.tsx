@@ -35,18 +35,18 @@ export function Footer() {
                           <Link href="/familylaw" className="hover:underline ">Family Law</Link>
                       </li>
                       <li>
-                          <Link href="/internships" className="hover:underline">Internships</Link>
+                          <Link href="/probate" className="hover:underline">Probate</Link>
                       </li>
                   </ul>
               </div>
               <div>
-                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Others</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <Link href="#" className="hover:underline">Privacy Policy</Link>
+                          <Link href="otherservices" className="hover:underline">Other Services</Link>
                       </li>
                       <li>
-                          <Link href="#" className="hover:underline">Terms &amp; Conditions</Link>
+                          <Link href="internships" className="hover:underline">Internships</Link>
                       </li>
                   </ul>
               </div>

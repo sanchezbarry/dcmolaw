@@ -31,7 +31,7 @@ export default function FloatingBackToTop() {
 
     return (
         <motion.button
-            className="fixed bottom-0 right-0 p-5"
+            className="fixed bottom-0 right-0 p-5 z-50"
             variants={ScrollToTopContainerVariants}
             initial="hide"
             animate={controls}
