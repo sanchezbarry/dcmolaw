@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 // import { motion } from "motion/react";
 
-export function HeroSectionOne() {
+export default function AboutUs() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
 
@@ -126,11 +126,7 @@ Whether you’re facing a difficult family crisis, a legal dispute, or seeking s
   );
 }
 
-export default function AboutUs() {
 
-  return (
-    <>
-    <HeroSectionOne />
     {/* <div className="pt-12 pb-10 flex justify-center items-center px-4">
       <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         About Us
@@ -177,6 +173,4 @@ Our Ms Dorothy Chai has won several awards and accolades for her work as a Famil
       </div>
     </div> */}
     {/* <AnimatedTestimonialsView /> */}
-    </>
-  );
-}
+ 

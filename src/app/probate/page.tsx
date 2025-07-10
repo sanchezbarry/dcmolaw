@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion";
 
-export function HeroSectionOne() {
+export default function Probate() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
 
@@ -130,11 +130,9 @@ We help executors, administrators, and beneficiaries navigate their roles and re
   );
 }
 
-export default function Probate() {
 
-  return (
-    <>
-    <HeroSectionOne />
+
+
     {/* <div className="pt-12 pb-10 flex justify-center items-center px-4">
       <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
       Probate Law Services 
@@ -190,7 +188,3 @@ With our expertise, we streamline the probate process, minimizing delays and avo
 </Link>
     </div>
       </div> */}
-
-    </>
-  );
-}

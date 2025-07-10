@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion";
 
-export function HeroSectionOne() {
+export default function OtherServices() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
 
@@ -133,11 +133,9 @@ Conveyancing (Buying and Selling of Property)
     </div>
   );
 }
-export default function OtherServices() {
 
-  return (
-    <>
-    <HeroSectionOne />
+
+  
     {/* <div className="pt-12 pb-10 flex justify-center items-center px-4">
       <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
       Other Areas of Practice
@@ -180,9 +178,3 @@ Conveyancing (Buying and Selling of Property)
     </div>
 
       </div> */}
-
-
-
-    </>
-  );
-}
