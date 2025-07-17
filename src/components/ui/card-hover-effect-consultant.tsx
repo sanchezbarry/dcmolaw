@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 // import { ReactNode, useState } from "react";
 import { useState } from "react";
+import { Button } from "./button";
 
 export const HoverEffect = ({
   items,
@@ -55,6 +56,7 @@ export const HoverEffect = ({
             <CardImage>{item.image}</CardImage>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
+            <CardCTA />
           </Card>
         </Link>
       ))}
@@ -128,4 +130,19 @@ export const CardDescription = ({
       {children}
     </p>
   );
+};
+
+export const CardCTA = ({
+
+ 
+}) => {
+  return (
+    <div className="flex justify-center items-center px-4 py-6">
+
+    {/* <Button className="mx-auto">Read More</Button> */}
+    <Button className="mx-auto w-60 transform transition-all duration-300">Read More</Button>
+
+  </div>
+  )   
+  ;
 };

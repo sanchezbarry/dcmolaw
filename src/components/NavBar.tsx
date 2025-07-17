@@ -112,8 +112,8 @@ function ProfilesListMenu() {
             src="/groupshot.jpg"
             alt="lawyers"
             className="h-500 w-300 rounded-2xl"
-            width={1350}
-            height={1350} />
+            width={550}
+            height={550} />
           </Card>
           <ul className="no-outline col-span-4 flex w-full flex-col gap-1">
             {renderItems}
@@ -232,8 +232,8 @@ function ServicesListMenu() {
             src="/lawservices.jpg"
             alt="lawyers"
             className="h-500 w-300 rounded-2xl"
-            width={1350}
-            height={1350} />
+            width={550}
+            height={550} />
           </Card>
           <ul className="no-outline col-span-4 flex w-full flex-col gap-1 dark:text-neutral-100 ">
             {renderItems}
