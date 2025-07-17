@@ -45,7 +45,7 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="relative z-20 py-8 lg:pt-12 lg:pb-6 max-w-7xl mx-auto">
+    <div className="relative z-20 py-8 lg:pb-6 max-w-7xl mx-auto">
       {/* <div className="px-8">
         <Image src="/dcmowhite.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
@@ -78,13 +78,13 @@ export function FeaturesSectionDemo() {
     paddingTop: 0, // ensures it starts at the very top
   }}
 >
-  <div className="absolute inset-0 bg-black/40 dark:bg-black/60 pointer-events-none" />
+  <div className="absolute inset-0 bg-black/55 dark:bg-black/60 pointer-events-none" />
   <div className="relative z-10 pt-16 pb-16"> {/* pt-16 for spacing below nav, pb-16 for more space below button */}
     <Image src="/dcmowhite.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
-    <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
+    <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
       Every client matters.
     </h4>
-    <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+    <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-center font-normal dark:text-neutral-300 text-neutral-100">
       We offer
       a comprehensive range of legal services that focus primarily on family law, Mental Capacity Law, mediation, personal law and other forms of dispute resolution.
     </p>

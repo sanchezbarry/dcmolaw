@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Navbar,
   // MobileNav,
@@ -49,19 +49,24 @@ const profilesMenuItems = [
  
 function ProfilesListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
  
   const renderItems = profilesMenuItems.map(({ title, description, link }) => (
     <a href={link} key={title}>
       <MenuItem className="hover:bg-[#baa974]" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-        <Typography variant="h6" color="white" className="mb-1" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="h6" color="white" className="dark:text-neutral-100 text-blue-gray-900 mb-1" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
         </Typography>
-        <Typography variant="small" color="white" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="small" color="white" className="dark:text-neutral-100 text-blue-gray-900 font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {description}
         </Typography>
       </MenuItem>
     </a>
   ));
+
+
+
+
  
   return (
     <React.Fragment>
@@ -143,10 +148,22 @@ const servicesMenuItems = [
       link: "/familylaw"
   },
   {
-    title: "Probate",
+    title: "Probate & Wills",
     description:
       "Probate is a legal process for distributing your estate according to the terms of your Will.",
       link: "/probate"
+  },
+    {
+    title: "Civil Litigation",
+    description:
+      "We handle a wide array of civil and commercial disputes, including complex contractual, employment, property, and personal injury matters.",
+      link: "/civillitigation"
+  },
+    {
+    title: "Deputyship",
+    description:
+      "A Deputy is appointed by the court to make certain decisions on behalf of a person who lacks mental capacity when the person has not made a Lasting Power of Attorney.",
+      link: "/deputyship"
   },
   {
     title: "Others",
@@ -162,10 +179,10 @@ function ServicesListMenu() {
   const renderItems = servicesMenuItems.map(({ title, description, link }) => (
     <a href={link} key={title}>
       <MenuItem className="hover:bg-[#baa974]" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
-        <Typography variant="h6" color="white" className="mb-1 no-outline" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="h6" color="white" className="dark:text-neutral-100 text-blue-gray-900 mb-1 no-outline" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
         </Typography>
-        <Typography variant="small" color="white" className="font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="small" color="white" className="dark:text-neutral-100 text-blue-gray-900 font-normal" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {description}
         </Typography>
       </MenuItem>
@@ -302,7 +319,25 @@ function NavList() {
  
 export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
- 
+   const [isDark, setIsDark] = useState(false);
+
+     useEffect(() => {
+    // Detect dark mode from <html> class
+    const checkDark = () => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    };
+    checkDark();
+    window.addEventListener("resize", checkDark);
+    const observer = new MutationObserver(checkDark);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    return () => {
+      window.removeEventListener("resize", checkDark);
+      observer.disconnect();
+    };
+  }, []);
+
+  const logoSrc = isDark ? "/whitedcmo.png" : "/dcmologo.jpg";
+
   const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
  
   React.useEffect(() => {
@@ -323,7 +358,7 @@ export default function NavBar() {
       <Link href="/">
               <Image
                 alt="DCMO Law"
-                src="/whitedcmo.png"
+                src={logoSrc}
                 className="h-6 w-auto px-1"
                 width="1350"
                 height="1350"
@@ -337,7 +372,7 @@ export default function NavBar() {
           color="white"
           variant="text"
           onClick={toggleIsNavOpen}
-          className="ml-auto mr-2 lg:hidden"
+          className="dark:text-neutral-100 text-blue-gray-900 ml-auto mr-2 lg:hidden"
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
@@ -353,3 +388,4 @@ export default function NavBar() {
     </Navbar>
   );
 }
+

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion";
 
-export default function FamilyLaw() {
+export default function Deputyship() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
 
@@ -19,7 +19,7 @@ export default function FamilyLaw() {
       </div>
       <div className="px-4 py-10 md:py-20">
         <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
-          {"Family Law"
+          {"Deputyship"
             .split(" ")
             .map((word, index) => (
               <motion.span
@@ -55,7 +55,7 @@ export default function FamilyLaw() {
         >
           <div className="w-full overflow-hidden rounded-xl  border-gray-300 dark:border-gray-700">
             <img
-              src="familylaw2.jpg"
+              src="deputyship.jpg"
               alt="Landing page preview"
               className="aspect-[16/5] h-auto w-full object-centre object-cover"
               height={720}
@@ -80,53 +80,29 @@ export default function FamilyLaw() {
       {/* <p className="text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         
       </p> */}
-      Compassionate Advocacy. Clear Guidance. Practical Solutions.
+
       <br/><br/>
 
-  At <b>DCMO Law Practice LLC</b> our Family Law Department is dedicated to helping individuals and families navigate some of life’s most personal and sensitive challenges. With a deep understanding of both the legal and emotional complexities involved, our multidisciplinary team will provide thoughtful, strategic support tailored to your unique situation.
+At <b>DCMO Law Practice LLC</b>, we understand the emotional and legal complexities that arise when a loved one loses the capacity to make decisions for themselves. Our <b>Deputyship</b> services are designed to help families and caregivers navigate this sensitive area of law with empathy, care, and precision.
 
 <br/><br/>
 
-  Whether you’re dealing with a divorce, custody arrangements, maintenance disputes, or guardianship concerns, our team offers clear, practical advice—grounded in empathy and legal precision. Our highly experienced team of lawyers not only offer sound and practical legal solutions to your legal issues, but are also able to handle them with the nuance and finesse required in dealing with delicate familial relationships. We focus on protecting your rights and your peace of mind for you to transition into your new life. 
+A Deputy is appointed by the court to make certain decisions on behalf of a person who lacks mental capacity when the person has not made a Lasting Power of Attorney (LPA).
+Parents of children with intellectual disabilities may also apply to the court to appoint themselves as deputies for their children and another person as a successor deputy to plan if the parents themselves lose capacity or pass away.
 
 <br/><br/>
 
-  We recognise that no two families are the same. That’s why we approach each case with care, discretion, and a commitment to achieving outcomes that serve your best interests—both now and for the future.
+We take a holistic, client-focused approach—balancing legal requirements with a deep understanding of the emotional impact these situations can bring. Whether you&#39;re applying to become a deputy for a loved one or facing a contested application, we provide steady legal guidance every step of the way.
 
 <br/><br/>
 
-  Both of our founding directors, Ms. Dorothy Chai & Ms. Mary Ong have more than 30 years of experience in practising Matrimonial Law. Let our Family Law team be your trusted partner to navigate successfully through the legal process. With DCMO, you’re not just another case—you’re someone we’re here to support.
+With <b>DCMO Law Practice LLC</b>, you&#39;re not just navigating the law, you’re supported by a team that cares about the person behind the paperwork.
+
 
 <br/><br/>
-Contentious and uncontentious Divorce proceedings
-<br/>
-Annulment of marriages
-<br/>
-Judicial separation
-<br/>
-Deed of Separation
-<br/>
-Deed of Settlement
-<br/>
-Maintenance and Assets Division
-<br/>
-Tracing of Matrimonial Assets and Injunctions
-<br/>
-Child Custody and Access applications
-<br/>
-Parental alienation
-<br/>
-International relocation
-<br/>
-Family Disputes
-<br/>
-Personal Protection and Exclusion Orders
-<br/>
-Variation of existing Court Orders
-<br/>
-Alternative dispute resolution e.g. mediation and negotiation
-<br/>
-Mental Capacity Law and Legacy Planning is a key area of practice in our firm. 
+
+
+
 <br/>
         </motion.p>
         <motion.div

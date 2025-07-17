@@ -1,7 +1,21 @@
 'use client'
+import { useEffect, useState } from "react";
 import Image from "next/image"
 import Link from "next/link"
 export function Footer() {
+    const [isDark, setIsDark] = useState(false);
+
+        useEffect(() => {
+        const checkDark = () => {
+            setIsDark(document.documentElement.classList.contains("dark"));
+        };
+        checkDark();
+        const observer = new MutationObserver(checkDark);
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+        return () => observer.disconnect();
+    }, []);
+
+    const logoSrc = isDark ? "/dcmowhite.png" : "/dcmoblack.png";
     return (
 
 <footer className="bg-white dark:bg-gray-900">
@@ -9,7 +23,7 @@ export function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
                   <Image 
-                    src="/dcmowhite.png" 
+                    src={logoSrc}
 
                     // className="h-8 me-3" 
                     alt="DCMO Logo" 
@@ -59,11 +73,11 @@ export function Footer() {
           <div className="flex mt-4 sm:justify-center sm:mt-0 text-gray-500 text-sm dark:text-gray-400">
 DCMO Law Practice LLC
 <br/>
-133 New Bridge Road #14-10 Chinatown Point
+133 New Bridge Road, #14-10, Chinatown Point
 <br/>
 Singapore 059413
 <br/>
-Tel : 65320123
+Tel : 6532 0123
 Fax : 6535 2265
           </div>
       </div>

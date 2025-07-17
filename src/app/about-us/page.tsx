@@ -1,5 +1,5 @@
 'use client'
-// import { AnimatedTestimonialsView } from "@/components/AnimatedTestimonials";
+import { AnimatedTestimonialsView } from "@/components/AnimatedTestimonials";
 import React from "react";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
@@ -97,6 +97,30 @@ We believe that the law is more than legal outcomes — <b>it is about people</b
 Whether you’re facing a difficult family crisis, a legal dispute, or seeking sound legal advice, <b>DCMO Law Practice LLC</b> is here to help you overcome your legal issues with confidence.
 
         </motion.p>
+
+                <h1 className="pt-10 relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
+          {"Awards"
+            .split(" ")
+            .map((word, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                transition={{
+                  duration: 0.3,
+                  delay: index * 0.1,
+                  ease: "easeInOut",
+                }}
+                className="mr-2 inline-block"
+              >
+                {word}
+              </motion.span>
+            ))}
+        </h1>
+
+        <AnimatedTestimonialsView />
+
+
         <motion.div
           initial={{
             opacity: 0,

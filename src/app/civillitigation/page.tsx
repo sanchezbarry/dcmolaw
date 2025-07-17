@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion";
 
-export default function FamilyLaw() {
+export default function CivilLitigation() {
   return (
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
 
@@ -19,7 +19,7 @@ export default function FamilyLaw() {
       </div>
       <div className="px-4 py-10 md:py-20">
         <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
-          {"Family Law"
+          {"Civil Litigation"
             .split(" ")
             .map((word, index) => (
               <motion.span
@@ -55,7 +55,7 @@ export default function FamilyLaw() {
         >
           <div className="w-full overflow-hidden rounded-xl  border-gray-300 dark:border-gray-700">
             <img
-              src="familylaw2.jpg"
+              src="civillitigation.jpg"
               alt="Landing page preview"
               className="aspect-[16/5] h-auto w-full object-centre object-cover"
               height={720}
@@ -80,53 +80,55 @@ export default function FamilyLaw() {
       {/* <p className="text-2xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         
       </p> */}
-      Compassionate Advocacy. Clear Guidance. Practical Solutions.
+      Civil Litigation & Dispute Resolution: Strategic Advocacy
       <br/><br/>
 
-  At <b>DCMO Law Practice LLC</b> our Family Law Department is dedicated to helping individuals and families navigate some of life’s most personal and sensitive challenges. With a deep understanding of both the legal and emotional complexities involved, our multidisciplinary team will provide thoughtful, strategic support tailored to your unique situation.
+  At DCMO Law Practice LLC, our Civil Litigation Department is dedicated to delivering strategic, results-driven solutions for a wide spectrum of disputes. We serve individuals, businesses, and organisations with a commitment to efficient, effective, and client-focused representation. Our experienced lawyers approach each case with meticulous preparation, balancing assertive advocacy and practical legal insight to achieve your objectives.
+
 
 <br/><br/>
 
-  Whether you’re dealing with a divorce, custody arrangements, maintenance disputes, or guardianship concerns, our team offers clear, practical advice—grounded in empathy and legal precision. Our highly experienced team of lawyers not only offer sound and practical legal solutions to your legal issues, but are also able to handle them with the nuance and finesse required in dealing with delicate familial relationships. We focus on protecting your rights and your peace of mind for you to transition into your new life. 
+  <b>Extensive Experience:</b> Our team has handled a wide array of civil and commercial disputes, including complex contractual, employment, property, and personal injury matters.
 
 <br/><br/>
 
-  We recognise that no two families are the same. That’s why we approach each case with care, discretion, and a commitment to achieving outcomes that serve your best interests—both now and for the future.
+<b>Mediation & Arbitration:</b> Our team comprises recognised mediators and arbitrators, often appointed to help parties resolve disputes efficiently and amicably, both in court and through alternative dispute resolution mechanisms. We are associate members of the Singapore Mediation Centre, the Singapore International Mediation Institute (SIMI) and the Law Society Mediation Scheme.
 
 <br/><br/>
 
-  Both of our founding directors, Ms. Dorothy Chai & Ms. Mary Ong have more than 30 years of experience in practising Matrimonial Law. Let our Family Law team be your trusted partner to navigate successfully through the legal process. With DCMO, you’re not just another case—you’re someone we’re here to support.
+<b>Client-Centric Approach:</b> Our team is known for their ability to demystify complex legal issues, providing clear, practical advice and robust representation.
 
 <br/><br/>
-Contentious and uncontentious Divorce proceedings
+<b>Professional Recognition:</b> Members of our team are accredited by the Singapore International Mediation Institute and Singapore Institute of Arbitrators, reflecting their standing in the legal community.
+<br/><br/>
+<b>Our Civil Litigation Services</b>
 <br/>
-Annulment of marriages
+Commercial & Contractual Disputes
 <br/>
-Judicial separation
+Defamation
 <br/>
-Deed of Separation
+Animal Law
 <br/>
-Deed of Settlement
+Employment & Workplace Disputes
 <br/>
-Maintenance and Assets Division
+Industrial Accidents
 <br/>
-Tracing of Matrimonial Assets and Injunctions
+Banking Law
 <br/>
-Child Custody and Access applications
+Property & Tenancy Matters
 <br/>
-Parental alienation
+Personal Injury & Negligence Claims
 <br/>
-International relocation
+Trusts, Estates & Probate
 <br/>
-Family Disputes
+Bankruptcy & Insolvency Proceedings
 <br/>
-Personal Protection and Exclusion Orders
-<br/>
-Variation of existing Court Orders
-<br/>
-Alternative dispute resolution e.g. mediation and negotiation
-<br/>
-Mental Capacity Law and Legacy Planning is a key area of practice in our firm. 
+Bankruptcy & Insolvency Proceedings
+<br/><br/>
+<b>Our Commitment:</b> We are dedicated to providing clear, strategic, and practical legal solutions. Whether through litigation, mediation, or arbitration, we aim to resolve your disputes with integrity, professionalism, and a focus on your best interests.
+For more information or to schedule a consultation, contact us today.
+
+
 <br/>
         </motion.p>
         <motion.div
