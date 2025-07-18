@@ -103,7 +103,7 @@ Immigration matters
 <br/>
 Financial Claims and Settlements
 <br/>
-Conveyancing (Buying and Selling of Property) 
+Conveyancing (Property Related Transactions)
         </motion.p>
         <motion.div
           initial={{

@@ -97,9 +97,9 @@ export default function FamilyLaw() {
 
   Both of our founding directors, Ms. Dorothy Chai & Ms. Mary Ong have more than 30 years of experience in practising Matrimonial Law. Let our Family Law team be your trusted partner to navigate successfully through the legal process. With DCMO, you’re not just another case—you’re someone we’re here to support.
 <br/><br/>
-Contentious and uncontentious Divorce proceedings
-<br/><br/>
 <b>The range of matrimonial matters handled by our firm include the following:-</b>
+<br/><br/>
+Contentious and uncontentious Divorce proceedings
 <br/>
 Annulment of marriages
 <br/>
@@ -127,7 +127,7 @@ Variation of existing Court Orders
 <br/>
 Alternative dispute resolution e.g. mediation and negotiation
 <br/>
-Mental Capacity Law and Legacy Planning is a key area of practice in our firm. 
+Mental Capacity Law and Legacy Planning
 <br/>
         </motion.p>
         <motion.div
