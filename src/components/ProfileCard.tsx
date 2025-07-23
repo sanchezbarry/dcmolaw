@@ -43,9 +43,10 @@ export function MinZhiProfileCard() {
   );
 }
 
-export function MunLoonProfileCard() {
+export function MunLoonProfileCard({ backHref }: { backHref: string }) {
   return (
     <Card>
+      <CardBackButton href={backHref}>Back to Associates</CardBackButton>
       <CardImage>
         /munloon.jpg
       </CardImage> 
@@ -122,9 +123,10 @@ export function RashpalProfileCard() {
   );
 }
 
-export function DorothyProfileCard() {
+export function DorothyProfileCard({ backHref }: { backHref: string }) {
   return (
     <Card>
+      <CardBackButton href={backHref}>Back to Partners</CardBackButton>
       <CardImage>
         /dorothychai.png
       </CardImage> 
@@ -179,9 +181,10 @@ export function DorothyProfileCard() {
   );
 }
 
-export function MaryProfileCard() {
+export function MaryProfileCard({ backHref }: { backHref: string }) {
   return (
     <Card>
+      <CardBackButton href={backHref}>Back to Partners</CardBackButton>
       <CardImage>
         /mary-ong.png
       </CardImage> 
@@ -228,9 +231,11 @@ export function MaryProfileCard() {
 
 
 
-export function EllenProfileCard() {
+export function EllenProfileCard({ backHref }: { backHref: string }) {
   return (
     <Card>
+
+      <CardBackButton href={backHref}>Back to Consultants</CardBackButton>
       <CardImage>
         /ellen-lee.png
       </CardImage> 
@@ -353,6 +358,64 @@ She was elected twice as a Member of Parliament for Sembawang GRC (Woodlands) in
   );
 }
 
+export function PradeepProfile({ backHref }: { backHref: string }) {
+  return (
+    <Card>
+      <CardBackButton href={backHref}>Back to Consultants</CardBackButton>
+      <CardImage>
+        /pradeepheadshot.jpg
+      </CardImage> 
+      <CardTitle>Pradeep Gurbani</CardTitle>
+      <CardDescription>
+      Pradeep Gurbani Esq. is a Senior Consultant at DCMO Law Practice LLP with extensive experience in civil litigation, mediation, arbitration and possesses a broad practice encompassing commercial and contractual litigation, and is qualified to handle both litigious and non-litigious matters, probate, administration of estates, wills and trusts.
+          <br></br>
+          <br></br>
+        Pradeep is admitted as an Advocate & Solicitor of the Supreme Court of Singapore, and a Barrister-at-Law (UK), and also serves as a Commissioner for Oaths and Notary Public. He is also a highly regarded and sought after mediator and arbitrator, holding positions such as Associate Mediator with the Singapore Mediation Centre, Mediator with SIMI, and Senior Mediator with the Law Society of Singapore. He is a Fellow of the Singapore Institute of Arbitrators, demonstrating his commitment to and expertise in dispute resolution.
+
+<br></br>
+Pradeep holds an LL.B (Hons) from the University of London, M.A. in Asia Pacific Studies from the University of Leeds and a Diploma in Applied Psychology.. He has held senior positions at several prominent Singaporean law firms, including Drew & Napier, KSCGP Juris LLP, Colin Ng & Partners, RHT Law Asia, prior to joining DCMO Law Practice LLP.
+
+
+
+<br></br>
+          <br></br>
+
+
+          <b>His qualifications include:</b>
+          <br></br>
+          LL.B (Hons), University of London
+
+          <br></br><br></br>
+          M.A. in Asia Pacific Studies, University of Leeds
+          <br></br>
+          Barrister-At-Law (UK), Lincoln&apos;s Inn
+          <br></br><br></br>
+          Advocate & Solicitor, Supreme Court of Singapore
+          <br></br><br></br>
+          Commissioner for Oaths
+          <br></br>
+          <br></br>
+          Notary Public
+          <br></br>
+          <br></br>
+          Fellow, Singapore Institute of Arbitrators (SIArb)
+          <br></br>
+          SMC Associate Mediator
+          <br></br><br></br>
+          SIMI Mediator
+          <br></br><br></br>
+          Senior Mediator, Law Society of Singapore
+          <br></br><br></br>
+          Fellow, Singapore Institute of Arbitrators
+
+            <br></br><br></br>
+          <b>For further inquiries or requests for consultation, please call 65320123.</b>
+      </CardDescription>
+      <CardCTA/>
+    </Card>
+  );
+}
+
 export const Card = ({
   className,
   children,
@@ -441,6 +504,15 @@ export const CardImage = ({
       
     );
   };
+
+export const CardBackButton = ({ href, children }: { href: string; children?: React.ReactNode }) => (
+  <div className="mb-4">
+    <Link href={href}>
+      <Button variant="secondary">{children || "Back"}</Button>
+    </Link>
+  </div>
+);
+
 
 export const MetaIconOutline = ({ className }: { className?: string }) => {
   return (

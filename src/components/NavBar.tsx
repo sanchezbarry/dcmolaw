@@ -336,7 +336,7 @@ export default function NavBar() {
     };
   }, []);
 
-  const logoSrc = isDark ? "/whitedcmo.png" : "/dcmologo.jpg";
+  const logoSrc = isDark ? "/whitedcmo.png" : "/dcmoblack.png";
 
   const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
  
