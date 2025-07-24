@@ -45,6 +45,12 @@ const profilesMenuItems = [
       "Our legal associates.",
       link: "/profiles/associates"
   },
+    {
+    title: "Support Staff",
+    description:
+      "Our support staff.",
+      link: "/profiles/supportstaff"
+  },
 ];
  
 function ProfilesListMenu() {

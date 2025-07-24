@@ -8,6 +8,89 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
 
+export function SeanWongProfile({ backHref }: { backHref: string }) {
+  return (
+    <Card>
+            <CardBackButton href={backHref}>Back to Associates</CardBackButton>
+      <CardImage>
+        /SeanWongHeadshot.jpeg
+      </CardImage> 
+      <CardTitle>Sean Wong</CardTitle>
+      <CardDescription>
+      Sean graduated with an LLB (Hons) from the University of Leeds in the United Kingdom and was subsequently called to the Singapore Bar in 2025.
+
+<br></br>
+          <br></br>
+He has successfully handled a wide range of complex civil and family disputes across all levels of the Singapore courts. Over time, Sean has developed a keen focus on family law, where he continues to provide dedicated and compassionate representation to his clients.
+<br></br>
+          <br></br>
+Committed to giving back, Sean also takes on Pro Bono cases whenever possible, contributing to access to justice and the well-being of the wider community.
+
+<br></br>
+          <br></br>
+Outside of work, Sean is an avid foodie who enjoys exploring Singapore in search of hidden culinary gems. To balance things out, he regularly plays vigorous matches of tennis to stay active.
+
+
+<br></br>
+          <br></br>
+          <b>For further inquiries or requests for consultation, please call 65320123.</b>
+      </CardDescription>
+      <CardCTA/>
+    </Card>
+  );
+}
+
+export function CorrineSohProfile({ backHref }: { backHref: string }) {
+  return (
+    <Card>
+      <CardBackButton href={backHref}>Back to Support Staff</CardBackButton>
+      <CardImage>
+        /Corrine_headshot.jpeg
+      </CardImage> 
+      <CardTitle>Corrine Soh</CardTitle>
+      <CardDescription>
+Paralegal to Ms Mary Ong
+<br></br>
+          <br></br>
+Corrine is one of our latest addition to the team, specialising in family matters. With her expertise, Corrine provides invaluable support to Ms. Mary Ong&apos;s team, ensuring seamless client management and the precise drafting of all legal documents. Her dedication to excellence and client care makes her an integral part of our firm&apos;s commitment to delivering exceptional legal services.
+
+
+<br></br>
+          <br></br>
+          <b>For further inquiries or requests for consultation, please call 65320123.</b>
+      </CardDescription>
+      <CardCTA/>
+    </Card>
+  );
+}
+
+export function JessHoProfile({ backHref }: { backHref: string }) {
+  return (
+    <Card>
+      <CardBackButton href={backHref}>Back to Support Staff</CardBackButton>
+      <CardImage>
+        /Jess_headshot.jpg
+      </CardImage> 
+      <CardTitle>Jess Ho</CardTitle>
+      <CardDescription>
+Paralegal to Ms Dorothy Chai
+<br></br>
+          <br></br>
+As the newest addition to the firm, Jess is a dedicated paralegal assisting Ms. Chai and her team in a wide range of legal matters. She is currently pursuing her Bachelor of Laws at the Singapore University of Social Sciences, where she continues to build a strong academic foundation for her legal career. Her academic excellence is reflected in her achievement of the top cohort results in both Contract and Civil Litigation and Legal Methods and the Singapore Legal System. She is also a proud recipient of the Tan Hee Joek Scholarship for AY2025 and the SUSS Study Award Grant for AY2024.
+
+<br></br>
+          <br></br>
+With a keen interest in matrimonial and civil law, Jess is particularly passionate about helping clients navigate emotionally challenging situations with empathy and clarity. She has gained hands-on experience in legal research, drafting legal documents, and supporting case preparation, which has deepened her understanding of litigation processes and client advocacy.
+
+<br></br>
+          <br></br>
+          <b>For further inquiries or requests for consultation, please call 65320123.</b>
+      </CardDescription>
+      <CardCTA/>
+    </Card>
+  );
+}
+
 export function MinZhiProfileCard() {
   return (
     <Card>

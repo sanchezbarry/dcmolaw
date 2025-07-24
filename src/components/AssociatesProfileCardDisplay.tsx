@@ -2,8 +2,8 @@ import { HoverEffect } from "./ui/card-hover-effect-associates";
 // import Image from 'next/image'
 
 export function AssociatesProfileCardDisplay() {
-  return (
-    <div className="max-w-5xl mx-auto px-8">
+  return ( 
+    <div className="max-w-5xl mx-auto px-8 dark:bg-neutral-900">
       <HoverEffect items={projects} />
     </div>
   );
@@ -30,7 +30,13 @@ export const projects = [
       "Mun Loon is a Legal Associate at DCMO Law Practice LLC and a trained and qualified social worker, counsellor and mediator.",
     link: "/profiles/associates/munloon",
   },
-
+  {
+    image: "/SeanWongHeadshot.jpeg",
+    title: "Sean Wong",
+    description:
+      "Sean graduated with an LLB (Hons) from the University of Leeds in the United Kingdom and was subsequently called to the Singapore Bar in 2025.",
+    link: "/profiles/associates/seanwong",
+  },
 
 
 ];
