@@ -78,14 +78,14 @@ export function FeaturesSectionDemo() {
     paddingTop: 0, // ensures it starts at the very top
   }}
 >
-  <div className="absolute inset-0 bg-black/30 dark:bg-black/50 pointer-events-none" />
+  <div className="absolute inset-0 bg-black/15 dark:bg-black/20 pointer-events-none" />
   <div className="relative z-10 pt-16 pb-16"> {/* pt-16 for spacing below nav, pb-16 for more space below button */}
     <Image src="/dcmowhite.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
     <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
       Every Client Matters.
     </h4>
     <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-center font-normal dark:text-neutral-300 text-neutral-100">
-     We strive to solve your problems and give you a new beginning.
+     We provide expertise for a better tomorrow.
     </p>
     <div className="mx-auto text-center">
       <Link href="#anchor_form"><Button>Contact Us</Button></Link>

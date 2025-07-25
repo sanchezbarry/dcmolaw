@@ -3,7 +3,7 @@ import { HoverEffect } from "./ui/card-hover-effect-associates";
 
 export function AssociatesProfileCardDisplay() {
   return ( 
-    <div className="max-w-5xl mx-auto px-8 dark:bg-neutral-900">
+    <div className="max-w-5xl mx-auto lg:px-8 dark:bg-neutral-900">
       <HoverEffect items={projects} />
     </div>
   );
