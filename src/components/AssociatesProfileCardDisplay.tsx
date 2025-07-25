@@ -1,4 +1,4 @@
-import { HoverEffect } from "./ui/card-hover-effect-associates";
+import { HoverEffect } from "./ui/card-hover-effect";
 // import Image from 'next/image'
 
 export function AssociatesProfileCardDisplay() {

@@ -1,4 +1,4 @@
-import { HoverEffect } from "./ui/card-hover-effect-consultant";
+import { HoverEffect } from "./ui/card-hover-effect";
 // import Image from 'next/image'
 
 export function ConsultantProfileCardDisplay() {
