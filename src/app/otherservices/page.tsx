@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function OtherServices() {
   return (
@@ -54,8 +55,8 @@ export default function OtherServices() {
           className="relative z-10 mt-5 rounded-3xl  border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
         >
           <div className="w-full overflow-hidden rounded-xl  border-gray-300 dark:border-gray-700">
-            <img
-              src="otherareas.jpg"
+            <Image
+              src="/otherareas.jpg"
               alt="Landing page preview"
               className="aspect-[16/5] h-auto w-full object-centre object-cover"
               height={720}

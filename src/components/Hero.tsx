@@ -45,7 +45,7 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="relative z-20 pb-8 lg:pb-6 max-w-7xl mx-auto">
+    <div className="relative z-20 pb-8 lg:pb-6 max-w-7xl mx-auto pt-1">
       {/* <div className="px-8">
         <Image src="/dcmowhite.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
@@ -78,7 +78,7 @@ export function FeaturesSectionDemo() {
     paddingTop: 0, // ensures it starts at the very top
   }}
 >
-  <div className="absolute inset-0 bg-black/55 dark:bg-black/60 pointer-events-none" />
+  <div className="absolute inset-0 bg-black/30 dark:bg-black/50 pointer-events-none" />
   <div className="relative z-10 pt-16 pb-16"> {/* pt-16 for spacing below nav, pb-16 for more space below button */}
     <Image src="/dcmowhite.png" alt="header" width={200} height={200} className="m-auto object-cover object-center rounded-md" />
     <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">

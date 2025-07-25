@@ -4,7 +4,7 @@ import React from "react";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { motion } from "framer-motion";
-// import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function AboutUs() {
   return (
@@ -56,10 +56,10 @@ export default function AboutUs() {
           className="relative z-10 mt-5 rounded-3xl  border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
         >
           <div className="w-full overflow-hidden rounded-xl  border-gray-300 dark:border-gray-700">
-            <img
-              src="image003.png"
+            <Image
+              src="/image003.png"
               alt="Landing page preview"
-              className="aspect-[16/7] h-auto w-full object-centre object-cover"
+              className="aspect-[16/7] h-auto w-full object-top object-cover"
               height={1080}
               width={1920}
             />

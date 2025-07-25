@@ -10,7 +10,6 @@ import {
   MenuHandler,
   MenuList,
   MenuItem,
-  // Avatar,
   Card,
   IconButton,
 } from "@material-tailwind/react";
@@ -55,6 +54,7 @@ const profilesMenuItems = [
  
 function ProfilesListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMobileOpen, setIsMobileOpen] = React.useState(false);
 
  
   const renderItems = profilesMenuItems.map(({ title, description, link }) => (
@@ -100,7 +100,7 @@ function ProfilesListMenu() {
         </MenuHandler>
 
         <MenuList
-          className="border-none hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid no-outline dark:bg-neutral-700 "
+          className="shadow-[rgba(0,0,10,0.5)_1px_1px_8px_1px] border-none hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid no-outline dark:bg-neutral-700 "
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
@@ -129,18 +129,39 @@ function ProfilesListMenu() {
 
 {/*Mobile menu*/}
 
-      <MenuItem
+      <div className="lg:hidden">
+        <MenuItem
+          className="flex items-center gap-2 text-sm font-semibold text-blue-gray-900 dark:text-neutral-100 cursor-pointer"
+          onClick={() => setIsMobileOpen((open) => !open)}
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
+          Profiles{" "}
+          <ChevronDownIcon
+            strokeWidth={2}
+            className={`h-4 w-4 transition-transform ${isMobileOpen ? "rotate-180" : ""}`}
+          />
+        </MenuItem>
+        {isMobileOpen && (
+          <ul className="ml-6 flex w-full flex-col gap-1">
+            {renderItems}
+          </ul>
+        )}
+      </div>
+
+      {/* <MenuItem
         className="flex items-center gap-2 font-medium text-blue-gray-900 dark:text-neutral-100  lg:hidden"
         placeholder=""
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
       >
         {/* <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "} */}
-        Profiles{" "}
-      </MenuItem>
-      <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
+        {/* Profiles{" "} */}
+      {/* </MenuItem> */} 
+      {/* <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
-      </ul>
+      </ul> */}
     </React.Fragment>
   );
 }
@@ -181,6 +202,7 @@ const servicesMenuItems = [
  
 function ServicesListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [isMobileOpen, setIsMobileOpen] = React.useState(false);
  
   const renderItems = servicesMenuItems.map(({ title, description, link }) => (
     <a href={link} key={title}>
@@ -220,7 +242,7 @@ function ServicesListMenu() {
         </MenuHandler>
 
         <MenuList
-          className="border-none hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid dark:bg-neutral-700 "
+          className="shadow-[rgba(0,0,10,0.5)_1px_1px_8px_1px] border-none hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid dark:bg-neutral-700 "
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
@@ -229,7 +251,7 @@ function ServicesListMenu() {
             color="transparent"
             shadow={false}
             variant="gradient"
-            className="dark:bg-neutral-900 no-outline col-span-3 grid h-full w-full place-items-center rounded-md"
+            className=" dark:bg-neutral-900 no-outline col-span-3 grid h-full w-full place-items-center rounded-md "
             placeholder=""
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
@@ -248,19 +270,39 @@ function ServicesListMenu() {
       </Menu>
 
 {/*Mobile menu*/}
+      <div className="lg:hidden">
+        <MenuItem
+          className="flex items-center gap-2 text-sm font-semibold text-blue-gray-900 dark:text-neutral-100 cursor-pointer"
+          onClick={() => setIsMobileOpen((open) => !open)}
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
+          Services{" "}
+          <ChevronDownIcon
+            strokeWidth={2}
+            className={`h-4 w-4 transition-transform ${isMobileOpen ? "rotate-180" : ""}`}
+          />
+        </MenuItem>
+        {isMobileOpen && (
+          <ul className="ml-6 flex w-full flex-col gap-1">
+            {renderItems}
+          </ul>
+        )}
+      </div>
 
-      <MenuItem
+      {/* <MenuItem
         className="flex items-center gap-2 font-medium dark:text-neutral-100 text-blue-gray-900 lg:hidden"
         placeholder=""
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
       >
         {/* <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "} */}
-        Services{" "}
-      </MenuItem>
-      <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
-        {renderItems}
-      </ul>
+        {/* Services{" "} */}
+      {/* </MenuItem> */}
+      {/* // <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
+      //   {renderItems}
+      // </ul> */} 
     </React.Fragment>
   );
 }
@@ -365,7 +407,7 @@ export default function NavBar() {
               <Image
                 alt="DCMO Law"
                 src={logoSrc}
-                className="h-6 w-auto px-1"
+                className="h-10 w-auto px-1"
                 width="1350"
                 height="1350"
               />
