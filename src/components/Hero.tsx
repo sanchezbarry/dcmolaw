@@ -33,16 +33,18 @@ export function FeaturesSectionDemo() {
         "Our Law Practice was founded upon the shared vision of our directors, Ms. Dorothy Chai and Ms. Mary Ong, to provide effective and practical legal solutions for our clients whilst training the next generation of Lawyers to do the same. Before merging, Ms Dorothy Chai practiced under the award-winning M/s Dorothy Chai Law Practice for 4 years and Ms Mary Ong practiced under M/s Mary Ong & Company for 10 years.",
       skeleton: <SkeletonThree />,
       className:
-        "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
-      button: <Link href="/about-us"><Button>About Us</Button></Link>
+        "col-span-1 lg:col-span-6 lg:border-r  dark:border-neutral-800",
+      button: <Link href="/about-us"><Button>About Us</Button></Link>,
+        titleClass: "text-left mx-0",
+      descClass: "text-left mx-0 w-full",
     },
-    {
-      title: "The fear of the Lord is the beginning of wisdom, and knowledge of the Holy One is understanding.",
-      description:
-        "Proverbs 9:10",
-      skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
-    },
+    // {
+    //   title: "The fear of the Lord is the beginning of wisdom, and knowledge of the Holy One is understanding.",
+    //   description:
+    //     "Proverbs 9:10",
+    //   skeleton: <SkeletonFour />,
+    //   className: "col-span-1 lg:col-span-3 border-b lg:border-none",
+    // },
   ];
   return (
     <div className="relative z-20 pb-8 lg:pb-6 max-w-7xl mx-auto pt-1">
@@ -95,15 +97,15 @@ export function FeaturesSectionDemo() {
 </div>
 
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 lg:grid-rows-2 mt-12 xl:border rounded-2x1 md:rounded-2xl dark:border-neutral-800 shadow-md">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} className={feature.className}>
-              <FeatureTitle>{feature.title}</FeatureTitle>
-              <FeatureDescription>{feature.description}</FeatureDescription>
-              <FeatureButton>{feature.button}</FeatureButton>
-              <div className=" h-full w-full">{feature.skeleton}</div>
-            </FeatureCard>
-          ))}
+        <div className="grid grid-cols-1 lg:grid-cols-6 lg:auto-rows-auto mt-12 xl:border rounded-2x1 md:rounded-2xl dark:border-neutral-800 shadow-md">
+{features.map((feature) => (
+  <FeatureCard key={feature.title} className={feature.className}>
+    <FeatureTitle className={feature.titleClass}>{feature.title}</FeatureTitle>
+    <FeatureDescription className={feature.descClass}>{feature.description}</FeatureDescription>
+    <FeatureButton className="text-left mx-0">{feature.button}</FeatureButton>
+    <div className="h-full w-full">{feature.skeleton}</div>
+  </FeatureCard>
+))}
         </div>
       </div>
     </div>
@@ -124,39 +126,57 @@ const FeatureCard = ({
   );
 };
 
-const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
-  return (
-    <p className="max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
-      {children}
-    </p>
-  );
-};
+const FeatureTitle = ({ children, className }: { children?: React.ReactNode; className?: string }) => (
+  <p className={cn("max-w-5xl tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug", className)}>
+    {children}
+  </p>
+);
 
-const FeatureButton = ({ children }: { children?: React.ReactNode }) => {
-  return (
-    <p className="max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
-      {children}
-    </p>
-  );
-};
+const FeatureButton = ({ children, className }: { children?: React.ReactNode; className?: string }) => (
+  <p className={cn("max-w-5xl tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug", className)}>
+    {children}
+  </p>
+);
 
-const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
-  return (
-    <p
-      className={cn(
-        "text-sm md:text-base max-w-4xl text-left mx-auto",
-        "text-neutral-500 text-center font-normal dark:text-neutral-300",
-        "text-left max-w-lg mx-0 md:text-sm my-2"
-      )}
-    >
-      {children}
-    </p>
-  );
-};
+const FeatureDescription = ({ children, className }: { children?: React.ReactNode; className?: string }) => (
+  <p className={cn("text-sm md:text-base max-w-4xl font-light dark:text-neutral-300 my-2", className)}>
+    {children}
+  </p>
+);
+
+// const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
+//   return (
+//     <p className="max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+//       {children}
+//     </p>
+//   );
+// };
+
+// const FeatureButton = ({ children }: { children?: React.ReactNode }) => {
+//   return (
+//     <p className="max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+//       {children}
+//     </p>
+//   );
+// };
+
+// const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
+//   return (
+//     <p
+//       className={cn(
+//         "text-sm md:text-base max-w-4xl text-left mx-auto",
+//         "text-neutral-500 text-center font-normal dark:text-neutral-300",
+//         "text-left max-w-lg mx-0 md:text-sm my-2"
+//       )}
+//     >
+//       {children}
+//     </p>
+//   );
+// };
 
 export const SkeletonOne = () => {
   return (
-    <div className="relative flex py-8 px-2 gap-10 h-full">
+    <div className="relative flex py-8 px-2 gap-10 h-1/2">
       
       <div className="w-full mx-auto bg-white dark:bg-neutral-900 group h-full">
 
@@ -182,14 +202,14 @@ export const SkeletonThree = () => {
   return (
 
       <div className="w-full mx-auto bg-transparent dark:bg-transparent group">
-        <div className="flex flex-1 w-full h-full flex-col space-y-2 relative">
+        <div className="flex flex-1 w-full h-1/2 flex-col space-y-2 relative">
 
           <Image
             src="/image003.png"
             alt="header"
-            width={4000}
-            height={4000}
-            className=" h-1/2 w-full object-cover object-center rounded-md pt-5 blur-none group-hover/image:blur-md transition-all duration-200"
+            width={200}
+            height={200}
+            className="h-80 lg:w-1/2 w-full object-cover object-top rounded-md pt-5 blur-none group-hover/image:blur-md transition-all duration-200"
           />
         </div>
       </div>
@@ -219,7 +239,7 @@ export const SkeletonTwo = () => {
     },
   };
   return (
-    <div className="relative flex flex-col items-start p-8 gap-10 h-full overflow-hidden">
+    <div className="relative flex flex-col items-start p-8 gap-10 h-1/2 overflow-hidden">
       {/* TODO */}
       <div className="flex flex-row -ml-20">
         {images.map((image, idx) => (
@@ -272,17 +292,17 @@ export const SkeletonTwo = () => {
   );
 };
 
-export const SkeletonFour = () => {
-  return (
-    <div className="flex flex-col items-center relative bg-transparent dark:bg-transparent mt-6">
-                <Image
-            src="/bible.jpg"
-            alt="header"
-            width={1200}
-            height={1200}
-            className="h-full w-full object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
-          />
-    </div>
-  );
-};
+// export const SkeletonFour = () => {
+//   return (
+//     <div className="flex flex-col items-center relative bg-transparent dark:bg-transparent mt-6">
+//                 <Image
+//             src="/bible.jpg"
+//             alt="header"
+//             width={1200}
+//             height={1200}
+//             className="h-full w-full object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+//           />
+//     </div>
+//   );
+// };
 

@@ -6,7 +6,7 @@ import React from 'react';
 // import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
 import Map from "@/components/Map";
-
+import Image from 'next/image';
 
 export function Contact() {
   
@@ -123,6 +123,13 @@ Phone: 6532 0123
 Fax : 6535 2265
 <br/><br/>
 
+<Image
+  className='mx-auto'
+  src="/fish.png"
+  alt="jesus DCMO fish"
+  width={125}
+  height={50}
+  />
         </motion.p>
         {/* <motion.div
           initial={{
