@@ -58,7 +58,7 @@ export default function FamilyLaw() {
             <Image
               src="/familylaw2.jpg"
               alt="Landing page preview"
-              className="aspect-[16/5] h-auto w-full object-top object-cover"
+              className="lg:aspect-[16/5] sm:aspect-[square] h-auto w-full object-center object-cover"
               height={720}
               width={1920}
             />

@@ -59,7 +59,7 @@ export default function AboutUs() {
             <Image
               src="/image003.png"
               alt="Landing page preview"
-              className="aspect-[16/7] h-auto w-full object-top object-cover"
+              className="lg:aspect-[16/7] sm:aspect-[square] h-auto w-full object-top object-cover"
               height={1080}
               width={1920}
             />

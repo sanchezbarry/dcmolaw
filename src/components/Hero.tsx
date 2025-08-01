@@ -36,7 +36,7 @@ export function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-6 lg:border-r  dark:border-neutral-800",
       button: <Link href="/about-us"><Button>About Us</Button></Link>,
         titleClass: "text-left mx-0",
-      descClass: "text-left mx-0 w-full",
+      descClass: "text-left mx-0 w-full col-span-6",
     },
     // {
     //   title: "The fear of the Lord is the beginning of wisdom, and knowledge of the Holy One is understanding.",
@@ -138,12 +138,17 @@ const FeatureButton = ({ children, className }: { children?: React.ReactNode; cl
   </p>
 );
 
+// const FeatureDescription = ({ children, className }: { children?: React.ReactNode; className?: string }) => (
+//   <p className={cn("text-sm md:text-base max-w-4xl font-light dark:text-neutral-300 my-2", className)}>
+//     {children}
+//   </p>
+// );
+
 const FeatureDescription = ({ children, className }: { children?: React.ReactNode; className?: string }) => (
-  <p className={cn("text-sm md:text-base max-w-4xl font-light dark:text-neutral-300 my-2", className)}>
+  <p className={cn("text-sm md:text-base font-light dark:text-neutral-300 my-2", className)}>
     {children}
   </p>
 );
-
 // const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
 //   return (
 //     <p className="max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">

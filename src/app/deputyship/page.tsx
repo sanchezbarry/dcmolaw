@@ -58,7 +58,7 @@ export default function Deputyship() {
             <Image
               src="/deputyship.jpg"
               alt="Landing page preview"
-              className="aspect-[16/5] h-auto w-full object-centre object-cover"
+              className="lg:aspect-[16/5] sm:aspect-[1/2]  h-auto w-full object-centre object-cover"
               height={720}
               width={1920}
             />
